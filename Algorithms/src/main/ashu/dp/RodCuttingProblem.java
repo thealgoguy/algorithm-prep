@@ -1,3 +1,5 @@
+package main.ashu.dp;
+
 import java.util.Scanner;
 //There are 2 classes of DP problems :
 //1. Simple : At any step, finding the optimal solution requires an optimal solution to only one subproblem. eg. maximal subarray problem.

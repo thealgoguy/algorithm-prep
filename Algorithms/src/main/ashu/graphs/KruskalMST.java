@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.graphs;
 
 import java.util.ArrayList;
 import java.util.Collections;

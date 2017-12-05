@@ -1,4 +1,4 @@
-package threadpool;
+package main.ashu.arrays;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package compgeometry;
+package main.ashu.computationalgeometry;
  
 //Given an ordered triplet of points(p1,p2,p3), find whether if their direction p1->p2>p3 is anti-clockwise or clockwise or collinear
 //Approach - if slope of vector p1p2 < slope of vector p2p3 then anti-clockwise if greater then clockwise if equal then collinear

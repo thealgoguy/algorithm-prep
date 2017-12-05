@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.graphs;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,7 +30,7 @@ public class DisjointSet {
   //uses Path Compression
   //find root of the tree by traversing up. While returning back form root to the previous nodes, make them point to root node directly.
   public Node findSet(Node node) {
-	  if(node.parent == node) return parent;
+	  if(node.parent == node) return node.parent;
 	  node.parent = findSet(node.parent); //path compression
 	  return node.parent;
   }
@@ -39,16 +39,16 @@ public class DisjointSet {
 	  Node xRoot = find(x);
 	  Node yRoot = find(y);
 	   // if x and y are already in the same set (i.e., have the same root or representative)
-     if xRoot == yRoot
+     if (xRoot == yRoot)
          return;
      // x and y are not in same set, so we merge them
-     if xRoot.rank < yRoot.rank
-         xRoot.parent := yRoot;
-     else if xRoot.rank > yRoot.rank
-         yRoot.parent := xRoot;
+     if (xRoot.rank < yRoot.rank)
+         xRoot.parent = yRoot;
+     else if(xRoot.rank > yRoot.rank)
+         yRoot.parent = xRoot;
      else
-         yRoot.parent := xRoot;
-         xRoot.rank := xRoot.rank + 1;
+         yRoot.parent = xRoot;
+         xRoot.rank = xRoot.rank + 1;
   }
   public static void main(String args[]) {
       DisjointSet ds = new DisjointSet();

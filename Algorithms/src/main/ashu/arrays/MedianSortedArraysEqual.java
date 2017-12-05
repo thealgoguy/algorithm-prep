@@ -1,4 +1,4 @@
-package arrays;
+package main.ashu.arrays;
 
 public class MedianSortedArraysEqual {
      int a [], b[];

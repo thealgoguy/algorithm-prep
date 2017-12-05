@@ -1,3 +1,5 @@
+package main.ashu.strings;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -40,7 +42,7 @@ public class LongestSubstrUniqueChars {
 	
 	public int lengthOfLongestSubstring2(String s) {
 	    int i = 0, j = 0, max = 0;
-	    Set<Character> set = new HashSet<>();	    
+	    Set<Character> set = new HashSet();	    
 	    while (j < s.length()) {
 	        if (!set.contains(s.charAt(j))) {
 	            set.add(s.charAt(j++));

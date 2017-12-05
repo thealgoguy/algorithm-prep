@@ -1,4 +1,4 @@
-package practice;
+package main.ashu.palindromes;
 
 import java.util.Scanner;
 //Longest palindromic prefix in a string S can be defined as :

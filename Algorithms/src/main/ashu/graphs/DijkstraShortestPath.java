@@ -1,4 +1,4 @@
-package graphs;
+package main.ashu.graphs;
 
 import java.util.*;
 
@@ -9,11 +9,10 @@ import java.util.*;
 //Dijkstra's is DFS with greedy approach
 
 class Graph3 {
-
 	private int V;
 	//private ArrayList<Integer> adj [];
-	Map<Integer, Integer> adj[]; //for O(1) lookup of edge weight, index of array is start vertex of edge
-	PriorityQueue<Vertex> minHeap;
+	Map<Integer, Integer> adj[]; //for O(1) lookup of edge weight, index of array is start GVertex of edge
+	PriorityQueue<GVertex> minHeap;
     int d [];
     int p[];
     boolean processed [];
@@ -26,7 +25,7 @@ class Graph3 {
 			adj[i] = new HashMap<Integer, Integer>();
 		}
 		//weight = new HashMap<String, Integer> ();
-		minHeap = new PriorityQueue<Vertex>(n, new Vertex());
+		minHeap = new PriorityQueue<GVertex>(n, new GVertex());
 		processed  = new boolean[n];
 		Arrays.fill(processed, false);
 		p = new int[n];
@@ -41,11 +40,11 @@ class Graph3 {
 	
 	public void calculateShortest(int source) {
 		d[source] = 0;	
-		minHeap.offer(new Vertex(source,d[source]));
-		//for(int i=0; i<V; i++) minHeap.offer(new Vertex(i,d[i]));
+		minHeap.offer(new GVertex(source,d[source]));
+		//for(int i=0; i<V; i++) minHeap.offer(new GVertex(i,d[i]));
 	
 		while(!minHeap.isEmpty()) {
-			Vertex u = minHeap.poll();
+			GVertex u = minHeap.poll();
 			if(!processed[u.getName()]) {
 				relaxEdges(u); //relax all outgoing edges of u
 				processed[u.getName()] = true;
@@ -53,11 +52,11 @@ class Graph3 {
 			
 		}
 		for(int i=0; i<d.length; i++) {
-			System.out.println("Shortest path from "+source+" to vertex "+i+" = "+d[i]); 
+			System.out.println("Shortest path from "+source+" to GVertex "+i+" = "+d[i]); 
 		}
 	}
 		
-   public void relaxEdges(Vertex u) {	
+   public void relaxEdges(GVertex u) {	
 	   Map<Integer, Integer> neighb = adj[u.getName()]; 
 	   Set<Integer> keys = neighb.keySet();
 	   for(int i : keys) {
@@ -65,7 +64,7 @@ class Graph3 {
 			   int alt = d[u.getName()] + neighb.get(i);
 			   if(d[i] > alt) {
 				   d[i] =  alt;
-				   Vertex temp = new Vertex(i,d[i]);
+				   GVertex temp = new GVertex(i,d[i]);
 				   minHeap.offer(temp);
 				   p[i] = u.getName();
 			   }
@@ -74,14 +73,14 @@ class Graph3 {
    }   
 }
 
-//to be used for binding every vertex with dval for use in PQ
-class Vertex implements Comparator<Vertex> {
+//to be used for binding every GVertex with dval for use in PQ
+ class GVertex implements Comparator<GVertex> {
 	int name;
 	int dval;  //current min distance from source
-	public Vertex() {
+	public GVertex() {
 		
 	}
-	public Vertex(int name, int dval) {
+	public GVertex(int name, int dval) {
 		this.name = name;
 		this.dval = dval;
 	}
@@ -97,7 +96,7 @@ class Vertex implements Comparator<Vertex> {
 	public void setDval(int dval) {
 		this.dval = dval;
 	}
-	public int compare(Vertex a, Vertex b) {
+	public int compare(GVertex a, GVertex b) {
     	return (a.dval - b.dval);
     }
 }

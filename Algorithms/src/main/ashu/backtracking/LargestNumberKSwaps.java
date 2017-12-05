@@ -1,4 +1,4 @@
-package practice;
+package main.ashu.backtracking;
 //Given a number K and string S of digits denoting a positive integer, build the largest number possible by performing swap operations on the digits of S atmost K times.
 //Concept : Backtracking or DFS
 public class LargestNumberKSwaps {
@@ -22,15 +22,15 @@ public class LargestNumberKSwaps {
 	        greater(max.toCharArray(), x.toCharArray());
 	        return;
 	    }
-	    //considering no swap
+	    //considering current number
 	    String x = String.valueOf(c);
 	    greater(max.toCharArray(), x.toCharArray());
 	    //skip swap for c[i]
 	    search(c, i+1, k); 
 	    //considering all possible swaps for c[i]
 	    for(int j=i+1; j<n; j++){
-	        swap(c, i, j);    
-	        search(c, i+1, k-1); //swap
+	        swap(c, i, j);    //swap
+	        search(c, i+1, k-1); //search after swap
 	        swap(c, i, j);    //backtrack
 	    }
 	}

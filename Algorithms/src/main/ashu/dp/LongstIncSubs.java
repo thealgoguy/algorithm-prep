@@ -1,5 +1,6 @@
-import java.util.*;
+package main.ashu.dp;
 
+import java.util.*;
 
 public class LongstIncSubs {
 	public static void main(String args []) {

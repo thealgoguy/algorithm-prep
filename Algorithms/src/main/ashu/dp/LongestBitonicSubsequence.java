@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.dp;
 
 public class LongestBitonicSubsequence {
   public static void main(String args []) {

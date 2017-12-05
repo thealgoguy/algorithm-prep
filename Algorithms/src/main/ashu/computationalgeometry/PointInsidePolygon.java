@@ -1,4 +1,4 @@
-package compgeometry;
+package main.ashu.computationalgeometry;
 
 //A point P is inside a polygon if
 //1. it lies on the boundary of polygon, i.e. on the segment of any side

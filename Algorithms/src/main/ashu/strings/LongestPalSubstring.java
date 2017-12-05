@@ -1,3 +1,4 @@
+package main.ashu.strings;
 
 //Given a string, find the longest palindromic substring in it.
 //Approach 1 : Dynamic programming
@@ -5,7 +6,6 @@
 //Approach 3: Manacher's algorithm O(n) time
 
 public class LongestPalSubstring {
-	
 	//O(n*n) time and O(n*n) space
 	public String longestPalindromeDP(String s) {
 		int n = s.length();
@@ -53,7 +53,7 @@ public class LongestPalSubstring {
 	}
 	
 	public static void main(String args []) {
-		LongestPalSubs lp = new LongestPalSubs();
+		LongestPalSubstring lp = new LongestPalSubstring();
 		String s = "babaddtattarrattatddetartrateedredividerb";
 		String p = lp.longestPalindromeDP(s);
 		System.out.println(p);

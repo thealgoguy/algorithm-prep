@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.patternsearching;
 //Given a text and a pattern containing wild card characters, find of the text contains the pattern
 //Wild card patterns : * - 0 or more occurrence of sequence of chars, ? - exactly 1 occurrence of any char
 //dp[i][j] = subproblem to match first i chars of text with first j chars of pattern

@@ -1,4 +1,4 @@
-package practice;
+package main.ashu.patternsearching;
 //print all the occurrences of the anagrams of the pattern in the text
 //Expected time - O(n)
 //use of hashing

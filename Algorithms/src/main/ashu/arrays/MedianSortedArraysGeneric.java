@@ -1,4 +1,4 @@
-package arrays;
+package main.ashu.arrays;
 
  //Best : https://codessnippets.wordpress.com/2015/10/05/mediankth-element-of-two-sorted-arrays/
 //http://stackoverflow.com/questions/34103511/understanding-the-algorithm-of-median-of-two-sorted-arrays
@@ -73,8 +73,8 @@ public class MedianSortedArraysGeneric {
     		return kthSmallestLengthBased(k-k/2, a, b, s1, s2+k/2);
     }
     public static void main(String args []) {
-    	int ar1[] = {3};
-        int ar2[] = {1, 2, 4, 5};
+    	int ar1[] = {900};
+        int ar2[] = {5, 8, 10, 20};
         double median = findMedianZeroBased(ar1, ar2);
         System.out.println("Median is "+median);
         median = findMedianLengthBased(ar1, ar2);

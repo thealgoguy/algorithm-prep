@@ -1,4 +1,4 @@
-package graphs;
+package main.ashu.graphs;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.patternsearching;
 
 //average and best case running time of the Rabin-Karp algorithm is O(n+m), but its worst-case time is O(nm)
 //poorer as compared to KMP, Z-algo, boyer moore, etc.

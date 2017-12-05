@@ -1,4 +1,4 @@
-package backtracking;
+package main.ashu.graphs;
 
 // Given a binary maze, find the minimum no of steps to reach the destination form  a source.
 //Use BFS search on the maze

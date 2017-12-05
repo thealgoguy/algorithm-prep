@@ -1,5 +1,6 @@
-import java.util.Scanner;
+package main.ashu.dp;
 
+import java.util.Scanner;
 
 public class LongestpalindSubseq {
    public static void main(String args []) {

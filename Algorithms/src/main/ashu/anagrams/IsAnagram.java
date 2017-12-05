@@ -1,6 +1,7 @@
+package main.ashu.anagrams;
+
 import java.util.Arrays;
 import java.util.Scanner;
-
 
 public class IsAnagram {
 public static void main(String args[]) {

@@ -1,3 +1,5 @@
+package main.ashu.dp;
+
 import java.util.Scanner;
 
 //Given N matrices of (MxN dimensions). Find an order in which these matrices are multiplied, 

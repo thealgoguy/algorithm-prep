@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.strings;
 
 public class StringEncode {
      public static String encode(char [] ch) {

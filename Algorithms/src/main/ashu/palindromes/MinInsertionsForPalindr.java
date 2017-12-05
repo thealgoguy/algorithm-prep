@@ -1,4 +1,4 @@
-package Palindromes;
+package main.ashu.palindromes;
 
 import java.util.Scanner;
 //Let S[i, j] represents a sub-string of string S starting from index i and ending at index j (both inclusive)

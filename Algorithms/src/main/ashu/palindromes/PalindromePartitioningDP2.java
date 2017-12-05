@@ -1,4 +1,4 @@
-package Palindromes;
+package main.ashu.palindromes;
 
 import java.util.Scanner;
 //optimization of previous version from O(n3) to O(n2)

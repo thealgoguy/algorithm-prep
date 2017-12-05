@@ -1,4 +1,4 @@
-package threadpool;
+package main.ashu.dp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,12 +9,10 @@ import java.io.InputStreamReader;
 public class MaximalKeyPrint {
 
 	public int getLetterCount(int N) {
-		if(N<=3) return N;  //base cases
 		int add [] = new int[N+1];
 		int select []= new int[N+1];
 		int copy [] = new int[N+1];
 		int paste [] = new int[N+1];
-		int dp [] = new int[N+1];
 		//initialization 
 		add[1] = 1; add[2] = 2; add[3] = 3;
 		select[1] = 0; select[2] = 1; select[3]=2;
@@ -22,18 +20,18 @@ public class MaximalKeyPrint {
 		paste[1] = 0; paste[2] = 0; paste[3] = 0;
 		//now start solving for larger subproblems
 		//note that copy will always be made on optimal select and 
-		//in order to optimize paste, we need to consider the best among last three copies(by observation)
-		dp[1]=1; dp[2]=2; dp[3]=3;
+		//in order to optimize paste, we need to consider no more than last three optimal copies(by observation)
+		int ans = Integer.MIN_VALUE;
 		for(int i=4; i<=N; i++) {
 			add[i] = Math.max(add[i-1], paste[i-1]) + 1;  //not counting select, copy..? think
 			select[i] = Math.max(add[i-1], paste[i-1]);   //u can't select copied value
 			copy[i] = select[i-1];  //only what's selected can be copied
 			//tricky part is that paste can be optimized by using any of the last three copies
-			//last 4th and so on copies won't lead to optimal paste hence ignoring them...or maybe I'm wrong
+			//last 4th and so on copies won't lead to optimal paste hence ignoring...but I maybe wrong
 			paste[i] = Math.max(2*copy[i-1], Math.max(3*copy[i-2], 4*copy[i-3]));
-			dp[i] = Math.max(dp[i-1], Math.max(add[i], paste[i])); //the answer for ith stage depends on add/paste of (i-1)th stage
+			ans = Math.max(ans, Math.max(add[i], paste[i]));
 		}
-		return dp[N];
+		return ans;
 	}
 
 	public static void main(String args []) throws NumberFormatException, IOException {
@@ -49,4 +47,3 @@ public class MaximalKeyPrint {
 		}
 	}
 }
-

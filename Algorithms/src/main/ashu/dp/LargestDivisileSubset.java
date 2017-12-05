@@ -1,4 +1,4 @@
-package DP;
+package main.ashu.dp;
 
 import java.util.Arrays;
 
@@ -18,10 +18,10 @@ public class LargestDivisileSubset {
    public static int findLargestDivisibleSubset(int arr []) {
 	   Arrays.sort(arr);
 	   int dp [] = new int[arr.length];
-	   int prev [] = new int[arr.length];
+	   //int prev [] = new int[arr.length];
 	   Arrays.fill(dp, 1);
 	   int ans = 1, ansIndex=0;
-	   prev[0] = -1;
+	 //  prev[0] = -1;
 	   for(int i=1; i<dp.length; i++) {
 		   int max = Integer.MIN_VALUE;
 		   for(int j=i-1; j>=0; j--) {
@@ -29,7 +29,7 @@ public class LargestDivisileSubset {
 				   //max = Math.max(max, dp[j]);
 				   if(max < dp[j]) {
 					   max = dp[j];
-					   prev[i] = j;
+					   //prev[i] = j;
 				   }
 			   }
 		   }
@@ -41,9 +41,16 @@ public class LargestDivisileSubset {
 		   }
 	   }
 	   int i=ansIndex;
+	   int len = ans;
+	   int next = arr[i];
 	   while(i>=0) {
-		   subset = Integer.toString(arr[i])+" "+subset;
-		   i = prev[i];
+		  if(dp[i] == len && next % arr[i] == 0) {
+			  subset = Integer.toString(arr[i])+" "+subset;
+			  len--;
+		  }
+		  i--;
+		  /* subset = Integer.toString(arr[i])+" "+subset;
+		   i = prev[i];*/
 	   }
 	   return ans;
    }

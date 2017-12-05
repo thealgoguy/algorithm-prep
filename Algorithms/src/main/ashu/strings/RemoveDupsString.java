@@ -1,4 +1,4 @@
-package threadpool;
+package main.ashu.strings;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;

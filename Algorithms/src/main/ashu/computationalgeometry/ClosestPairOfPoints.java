@@ -1,4 +1,4 @@
-package compgeometry;
+package main.ashu.computationalgeometry;
 
 import java.util.Arrays;
 import java.util.Comparator;

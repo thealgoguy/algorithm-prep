@@ -1,4 +1,4 @@
-package arrays;
+package main.ashu.strings;
 
 import java.util.Arrays;
 

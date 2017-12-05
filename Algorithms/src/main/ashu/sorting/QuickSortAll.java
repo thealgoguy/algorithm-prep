@@ -1,4 +1,4 @@
-package threadpool;
+package main.ashu.sorting;
 
 import java.util.Arrays;
 import java.util.Random;

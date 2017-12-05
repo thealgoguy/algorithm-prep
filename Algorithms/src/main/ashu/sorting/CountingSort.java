@@ -1,3 +1,4 @@
+package main.ashu.sorting;
 
 //http://www.opendatastructures.org/ods-java/11_2_Counting_Sort_Radix_So.html
 public class CountingSort {

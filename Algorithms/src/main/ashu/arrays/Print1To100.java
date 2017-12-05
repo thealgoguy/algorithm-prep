@@ -1,5 +1,4 @@
-package arrays;
-
+package main.ashu.arrays;
 
 public class Print1To100 {
 	static int i=1;

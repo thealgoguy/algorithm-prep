@@ -1,4 +1,4 @@
-package DP;
+package main.ashu.dp;
 
 //generate all subsets of a set S
 //Follow up - Generate subsets of size k

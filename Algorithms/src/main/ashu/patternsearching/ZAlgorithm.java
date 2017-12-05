@@ -1,4 +1,4 @@
-package Palindromes;
+package main.ashu.patternsearching;
 // Given a string S, z[i]= length of the longest common substring between S(0...n) and S(i...n).
 //z[i] is length of the z-box at index i
 //the algorithm uses a "main z-box" which is the rightmost z-box. 

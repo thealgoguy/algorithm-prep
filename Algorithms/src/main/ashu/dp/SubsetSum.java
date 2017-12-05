@@ -1,4 +1,4 @@
-package DP;
+package main.ashu.dp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,13 +20,32 @@ public class SubsetSum {
 		if(dp[sum][n]) {
 			System.out.println("Subset with sum "+sum+" exists");
 			List<Integer> path = new ArrayList();
-			printPath(arr, dp, sum, n, path);
+			printSubset(arr, sum, n, dp);
 		}
 		else 
 			System.out.println("No subset with sum "+sum+" exists");
 		
 	}
 	
+	private static void printSubset(int[] a, int sum, int n, boolean[][] dp) {
+		if(dp[sum][n]) System.out.println("Subset exists with sum = "+sum);
+		else System.out.println("Subset doesn't exist");
+		String subset = "";
+		int i= sum, j=n;
+		while(sum>0 && j>0) {
+			if(dp[i][j] == dp[i][j-1]) {
+				j--;
+			}
+			else {
+				subset += a[j-1] +" ";
+				i -= a[j-1];
+				j--;
+			}
+		}
+		System.out.println("Subset is : "+subset);
+	}
+	
+	//using backtracking
 	public static void printPath(int a[],  boolean dp[][], int sum, int n, List<Integer> path){
 	    if(sum < 0 || n<=0) return;
 	    if(!dp[sum][n]) return;

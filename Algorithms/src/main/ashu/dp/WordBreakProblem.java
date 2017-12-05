@@ -1,4 +1,4 @@
-package practice;
+package main.ashu.dp;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,9 @@
+package main.ashu.palindromes;
+
 import java.util.HashMap;
 import java.util.Set;
 
 import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
 
 public class LexiSmallPalind {
   public static void main(String srgs[]) {

@@ -1,4 +1,4 @@
-package compgeometry;
+package main.ashu.computationalgeometry;
 
 public class Point {
 	   public double x, y;

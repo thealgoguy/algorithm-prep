@@ -1,4 +1,4 @@
-package Palindromes;
+package main.ashu.palindromes;
 
 import java.util.Arrays;
 //Clear the concept of odd and even length palindrome.

@@ -1,3 +1,5 @@
+package main.ashu.dp;
+
 import java.util.Scanner;
 
 //This is also called Kadane's algorithm.

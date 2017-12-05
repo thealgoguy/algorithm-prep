@@ -1,4 +1,4 @@
-package geeksforgeeks;
+package main.ashu.dp;
 
 //Given three strings A, B and C. Write a function that checks whether C is an interleaving of A and B. 
 //C is said to be interleaving A and B,if it contains all characters of A and B and 

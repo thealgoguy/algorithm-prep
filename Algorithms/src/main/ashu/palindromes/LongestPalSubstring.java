@@ -1,3 +1,4 @@
+package main.ashu.palindromes;
 
 //Given a string, find the longest palindromic substring in it.
 //Approach 1 : Dynamic programming
@@ -53,7 +54,7 @@ public class LongestPalSubstring {
 	}
 	
 	public static void main(String args []) {
-		LongestPalSubs lp = new LongestPalSubs();
+		LongestPalSubstring lp = new LongestPalSubstring();
 		String s = "babaddtattarrattatddetartrateedredividerb";
 		String p = lp.longestPalindromeDP(s);
 		System.out.println(p);

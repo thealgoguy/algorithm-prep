@@ -1,7 +1,6 @@
-package threadpool;
+package main.ashu.arrays;
 
 import java.util.Arrays;
-
 
 public class CheckPower {
 	//time = O(loga base b)

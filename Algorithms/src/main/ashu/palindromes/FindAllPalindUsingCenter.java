@@ -1,4 +1,4 @@
-package Palindromes;
+package main.ashu.palindromes;
 
 import java.util.HashMap;
 import java.util.Iterator;

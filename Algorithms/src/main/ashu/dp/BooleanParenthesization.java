@@ -1,4 +1,4 @@
-package DP;
+package main.ashu.dp;
 
 //Implementation - https://miafish.wordpress.com/2015/01/03/boolean-parenthesization-problem/
 //Theory explained - http://stackoverflow.com/questions/6701812/counting-boolean-parenthesizations-implementation

@@ -1,4 +1,4 @@
-package threadpool;
+package main.ashu.arrays;
 
 //Given  an array find the smallest subarray to sort that sorts the whole array
 

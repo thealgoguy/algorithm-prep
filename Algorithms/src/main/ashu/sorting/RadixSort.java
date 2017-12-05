@@ -1,3 +1,4 @@
+package main.ashu.sorting;
 
 //Counting sort is a linear time sorting algorithm that sort in O(n+k) time when elements are in range from 1 to k.
 //But if the the range(k) becomes larger than n, maybe n*n, counting sort is not a good choice. Radix sort solves this p[roblem

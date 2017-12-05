@@ -1,4 +1,4 @@
-packag ashu
+package main.ashu.dp;
 
 import java.util.*;
 

@@ -1,3 +1,5 @@
+package main.ashu.patternsearching;
+
 import java.util.HashMap;
 import java.util.Map;
 

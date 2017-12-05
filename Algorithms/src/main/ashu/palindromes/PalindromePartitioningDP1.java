@@ -1,4 +1,4 @@
-package Palindromes;
+package main.ashu.palindromes;
 
 import java.util.Scanner;
 //Given a string, a partitioning of the string is a palindrome partitioning if 

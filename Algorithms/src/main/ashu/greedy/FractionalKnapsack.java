@@ -1,6 +1,8 @@
-import java.util.Arrays;
-//O(nlogn) time complexity greedy algorithm
+package main.ashu.greedy;
 
+import java.util.Arrays;
+
+//O(nlogn) time complexity greedy algorithm
 public class FractionalKnapsack {
   public static void main(String args []) {
 	  int W = 50;   //    Weight of knapsack

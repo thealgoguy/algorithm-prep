@@ -1,4 +1,4 @@
-package backtracking;
+package main.ashu.backtracking;
 //http://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/
 //backtracking steps :
 //Given - initial state, final state, constraints for next move
@@ -69,7 +69,7 @@ class RatInMaze {
 		   if(!isSafe(x,y)) return false;  //constraint failed
 		   sol[x][y] = 1;  //try this state 
 		   boolean isValidMove = solveMazeAllWays(x+1,y) | solveMazeAllWays(x, y+1);  //recursive step(costly due to repeated calls)
-		   sol[x][y] = 0;  //tricky, here we are backtracking for printing exact paths
+		   sol[x][y] = 0;  //tricky, here we are backtracking for printing other paths
 		   return isValidMove;
 	   }
 	   

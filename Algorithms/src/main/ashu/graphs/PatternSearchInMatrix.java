@@ -1,5 +1,4 @@
-package geeksforgeeks;
-
+package main.ashu.graphs;
 
 //given a matrix of chars and a word, find the occurrence of the word in the matrix in all the eight directions; print the path as well
 //application of depth first search or backtracking

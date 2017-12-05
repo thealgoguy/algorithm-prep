@@ -1,3 +1,5 @@
+package main.ashu.patternsearching;
+
 import java.util.Scanner;
 //for a string S, rad[i] = length of longest common substring between S(i+1....n) and S(i-1....0)
 //rad[i] is called radius of the palindrome with center i

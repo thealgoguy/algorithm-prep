@@ -1,4 +1,4 @@
-package arrays;
+package main.ashu.arrays;
  //print 100 times
 public class PrintHelloNoLoopRecursion {
    public static void main(String args []) {

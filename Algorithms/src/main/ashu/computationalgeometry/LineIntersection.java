@@ -1,5 +1,4 @@
-package compgeometry;
-
+package main.ashu.computationalgeometry;
 
 //Given two line segments (p1, q1) and (p2, q2), find if the given line segments intersect with each other.
 public class LineIntersection {

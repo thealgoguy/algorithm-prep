@@ -1,4 +1,4 @@
-package arrays;
+package main.ashu.strings;
 
 public class MaxContiguousSubstring {
 	   public static void main(String args []) {

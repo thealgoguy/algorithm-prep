@@ -1,5 +1,6 @@
-import java.util.Scanner;
+package main.ashu.palindromes;
 
+import java.util.Scanner;
 
 public class LongestPalindSubseq {
    public static void main(String args []) {

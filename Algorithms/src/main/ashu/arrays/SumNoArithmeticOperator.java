@@ -1,4 +1,4 @@
-package arrays;
+package main.ashu.arrays;
 
 public class SumNoArithmeticOperator {
     public static int findSum(int x, int y) {
