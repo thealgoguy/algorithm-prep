@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://github.com/mission-peace/interview/tree/master/src/com/interview/graph -->
+<html lang="en" class=" is-u2f-enabled"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+
+    <link crossorigin="anonymous" href="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/frameworks-c07e6f4b02b556d1d85052fb3853caf84c80e6b23dcdb1ae1b00f051da1115a2.css" integrity="sha256-wH5vSwK1VtHYUFL7OFPK+EyA5rI9zbGuGwDwUdoRFaI=" media="all" rel="stylesheet">
+    <link crossorigin="anonymous" href="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/github-09e1c38d593bf8fc6e4c4f1b526d0184e27c433d64963942c1e8c361589f8125.css" integrity="sha256-CeHDjVk7+PxuTE8bUm0BhOJ8Qz1kljlCwejDYVifgSU=" media="all" rel="stylesheet">
+    
+    
+    <link crossorigin="anonymous" href="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/site-293f92180d0a619a750fa2b5eae9e36740f5723a59c0ec308972c70d24e834fc.css" integrity="sha256-KT+SGA0KYZp1D6K16unjZ0D1cjpZwOwwiXLHDSToNPw=" media="all" rel="stylesheet">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>interview/src/com/interview/graph at master · mission-peace/interview · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/8218054?v=3&amp;s=400" name="twitter:image:src"><meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="mission-peace/interview" name="twitter:title"><meta content="interview - Interview questions" name="twitter:description">
+      <meta content="https://avatars2.githubusercontent.com/u/8218054?v=3&amp;s=400" property="og:image"><meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="mission-peace/interview" property="og:title"><meta content="https://github.com/mission-peace/interview" property="og:url"><meta content="interview - Interview questions" property="og:description">
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+    <meta name="request-id" content="D4B7:3559:2063157:364533D:5885C644" data-pjax-transient="">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host"><meta content="github" name="octolytics-app-id"><meta content="D4B7:3559:2063157:364533D:5885C644" name="octolytics-dimension-request_id">
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/files/disambiguate" data-pjax-transient="true" name="analytics-location">
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="M2RmZTkyMTg1NDIzMzA0MmYzZTMxYTY0NWU4MDg4OWJhNTJlZjI5MjU4ZTE4Y2MwMGYzNWNlNGU2YTUyN2JkNXx7InJlbW90ZV9hZGRyZXNzIjoiMS4yMi4yMjMuMTcyIiwicmVxdWVzdF9pZCI6IkQ0Qjc6MzU1OToyMDYzMTU3OjM2NDUzM0Q6NTg4NUM2NDQiLCJ0aW1lc3RhbXAiOjE0ODUxNjIwNTIsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="364c40db267ba7cd15354891c8a1f06c076c847a">
+
+    <meta http-equiv="x-pjax-version" content="94a9cc48ead92329faac49833ac14041">
+    
+
+      
+  <meta name="description" content="interview - Interview questions">
+  <meta name="go-import" content="github.com/mission-peace/interview git https://github.com/mission-peace/interview.git">
+
+  <meta content="8218054" name="octolytics-dimension-user_id"><meta content="mission-peace" name="octolytics-dimension-user_login"><meta content="22043847" name="octolytics-dimension-repository_id"><meta content="mission-peace/interview" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="22043847" name="octolytics-dimension-repository_network_root_id"><meta content="mission-peace/interview" name="octolytics-dimension-repository_network_root_nwo">
+  <link href="https://github.com/mission-peace/interview/commits/master.atom" rel="alternate" title="Recent Commits to interview:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph" data-pjax-transient="">
+  </head>
+
+
+  <body class="logged-out  env-production windows vis-public">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+    <a href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container Details alt-body-font" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="https://github.com/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="https://github.com/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="https://github.com/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/partners /business/features /business/customers /business">
+          Business
+</a>        <a href="https://github.com/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /showcases /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-1" href="https://github.com/login?return_to=%2Fmission-peace%2Finterview%2Ftree%2Fmaster%2Fsrc%2Fcom%2Finterview%2Fgraph" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary mr-md-3">
+          <a class="nav-item" href="https://github.com/pricing">Pricing</a>
+          <a class="nav-item" href="https://github.com/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com/">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://github.com/mission-peace/interview/search" class="js-site-search-form" data-scoped-search-url="/mission-peace/interview/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text" class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable" data-hotkey="s" name="q" placeholder="Search" aria-label="Search this repository" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fmission-peace%2Finterview" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/mission-peace/interview/watchers" aria-label="444 users are watching this repository">
+    444
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fmission-peace%2Finterview" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/mission-peace/interview/stargazers" aria-label="2178 users starred this repository">
+      2,178
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fmission-peace%2Finterview" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/mission-peace/interview/network" class="social-count" aria-label="1195 users forked this repository">
+      1,195
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/mission-peace" class="url fn" rel="author">mission-peace</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/mission-peace/interview" data-pjax="#js-repo-pjax-container">interview</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/mission-peace/interview" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mission-peace/interview" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/mission-peace/interview/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mission-peace/interview/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">13</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/mission-peace/interview/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /mission-peace/interview/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">16</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+  <a href="https://github.com/mission-peace/interview/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /mission-peace/interview/projects">
+    <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+    Projects
+    <span class="counter">0</span>
+</a>
+    <a href="https://github.com/mission-peace/interview/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /mission-peace/interview/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="https://github.com/mission-peace/interview/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /mission-peace/interview/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/mission-peace/interview/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /mission-peace/interview/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<div class="file-navigation">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    
+  <button class="btn btn-sm BtnGroup-item disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes" type="button">
+    Create new file
+  </button>
+
+
+
+    <a href="https://github.com/mission-peace/interview/find/master" data-pjax="" data-hotkey="t" class="js-pjax-capture-input btn btn-sm BtnGroup-item empty-icon">
+      Find file
+    </a>
+    <a href="https://github.com/mission-peace/interview/commits/master/src/com/interview/graph" class="btn btn-sm BtnGroup-item empty-icon tooltipped tooltipped-nw" aria-label="Browse commits for this branch">
+      History
+    </a>
+  </div>
+  <div class="breadcrumb"><span class="repo-root js-repo-root"><span class="js-path-segment"><a href="https://github.com/mission-peace/interview"><span>interview</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="https://github.com/mission-peace/interview/tree/master/src"><span>src</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="https://github.com/mission-peace/interview/tree/master/src/com"><span>com</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="https://github.com/mission-peace/interview/tree/master/src/com/interview"><span>interview</span></a></span><span class="separator">/</span><strong class="final-path">graph</strong><span class="separator">/</span></div>
+</div>
+
+
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/mission-peace/interview/commit/4d3589b3f83865cb76b4fcc34b9f35aed7d13e4e" data-pjax="">
+        4d3589b
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2016-11-01T07:06:08Z" title="Nov 1, 2016, 12:36 PM GMT+5:30">on Nov 1, 2016</relative-time></span>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="" class="avatar" data-canonical-src="https://1.gravatar.com/avatar/c2bf7a13d83c6204e0434c025c6a45b8?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" height="20" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/68747470733a2f2f312e67726176617461722e636f6d2f6176617461722f63326266376131336438336336323034653034333463303235" width="20">
+      <span class="user-mention">Tushar Roy</span>
+    </span>
+
+        <a href="https://github.com/mission-peace/interview/commit/4d3589b3f83865cb76b4fcc34b9f35aed7d13e4e" class="message" data-pjax="true" title="Evaluate division">Evaluate division</a>
+    
+
+  </div>
+
+
+<div class="file-wrap">
+
+  <a href="https://github.com/mission-peace/interview/tree/f7aebb63eab6511e2146a80f49b24e3990c33130/src/com/interview/graph" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+      <tbody><tr class="up-tree js-navigation-item">
+        <td></td>
+        <td><a href="https://github.com/mission-peace/interview/tree/master/src/com/interview" class="js-navigation-open" rel="nofollow" title="Go to parent directory">..</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    </tbody><tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/AlientDictionary.java" class="js-navigation-open" id="4a7038d256782eb568d525cf9ee37e7f-824965c6b875190ef2c9535388200d845408fc0b" title="AlientDictionary.java">AlientDictionary.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/5bce804dcb168570e818a2a2d35531071a37c6c2" class="message" data-pjax="true" title="Missing ranges">Missing ranges</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-10-19T16:41:25Z" title="Oct 19, 2016, 10:11 PM GMT+5:30">3 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/AllCyclesInDirectedGraphJohnson.java" class="js-navigation-open" id="dbe49fb6f57d7f2abfcf96a8d92d45cd-9bdb1928887b565e6a502680b5fecddd2c397253" title="AllCyclesInDirectedGraphJohnson.java">AllCyclesInDirectedGraphJohnson.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/cc55fb5ba9ace67809f4ff7b28591b757c99126d" class="message" data-pjax="true" title="adding youtube video link">adding youtube video link</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-11-23T22:01:34Z" title="Nov 24, 2015, 3:31 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/AllCyclesInDirectedGraphTarjan.java" class="js-navigation-open" id="76a59869f5cb241460832e63df102f65-98fe8885cc8d204d86b5ed426eacf02f6943b0dc" title="AllCyclesInDirectedGraphTarjan.java">AllCyclesInDirectedGraphTarjan.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/c29cb460233bc30e491324ed67a5b0f62d3a3664" class="message" data-pjax="true" title="Updating prim mst algorithm">Updating prim mst algorithm</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-26T06:09:51Z" title="Oct 26, 2015, 11:39 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/ArticulationPoint.java" class="js-navigation-open" id="bde03bd09fb6c0605bcd0622fd2d4156-6aa3187d37d34e913590b73061c59b9d457470ae" title="ArticulationPoint.java">ArticulationPoint.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/f442d9f9094baa91a7a091fb88306b0863f67e21" class="message" data-pjax="true" title="Updating documentation for articulation point">Updating documentation for articulation point</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-08-23T05:42:11Z" title="Aug 23, 2015, 11:12 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/BellmanFordShortestPath.java" class="js-navigation-open" id="652873e3bbfcb6cf28aa608ce4249a63-6f79a525ebb0308a62865c40ef159e1df4ee90d8" title="BellmanFordShortestPath.java">BellmanFordShortestPath.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/858c8d66cf83b828ef64d6bf764763a2827bf861" class="message" data-pjax="true" title="update in Bellman ford">update in Bellman ford</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-12-09T07:03:21Z" title="Dec 9, 2015, 12:33 PM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/BinaryMaxHeap.java" class="js-navigation-open" id="73575790267656ff230367df951b352c-5ad7144f5f2343b37f292d7943437bfce0547748" title="BinaryMaxHeap.java">BinaryMaxHeap.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/BinaryMinHeap.java" class="js-navigation-open" id="99ad4ea1e3edc60851d6104a59e6a148-2b669661082ac50be9a69a8f618fcc9f240fae95" title="BinaryMinHeap.java">BinaryMinHeap.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/d5af9f9443217512c0ff854f6cd03c4d92e44916" class="message" data-pjax="true" title="Updating Dijkstra code">Updating Dijkstra code</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-28T06:19:37Z" title="Oct 28, 2015, 11:49 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/BiparteGraph.java" class="js-navigation-open" id="1ad0ff80e508a7b7aa6148de51ee1467-4e4a519c8aa814839d91c00390b76d95a92350bf" title="BiparteGraph.java">BiparteGraph.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/Boggle.java" class="js-navigation-open" id="954b6af218d35d08896ec332f18e2bee-043bbaa547175d8c157caf1a4b103aedb2863a9b" title="Boggle.java">Boggle.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/952a3752fcfccb7c662bb854149085e30a269ed2" class="message" data-pjax="true" title="update boggle">update boggle</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-03-05T06:21:07Z" title="Mar 5, 2016, 11:51 AM GMT+5:30">11 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/Bridge.java" class="js-navigation-open" id="0f287a32807db73cf093c44d15b65e5b-77f860d60b8adb4c570a01a3f1b3c0fe330a805d" title="Bridge.java">Bridge.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/CloneDirectedGraph.java" class="js-navigation-open" id="64a84a3f9a935513a1c169addf4fc133-c7a1f4eb63d85d2d84c3ec8de8bea0786b20d9e9" title="CloneDirectedGraph.java">CloneDirectedGraph.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/CloneGraph.java" class="js-navigation-open" id="08dcd19c99b023e6fef39a3d888b5fcf-32f7797564c3d2c7318b7015a10fdb5f096232ce" title="CloneGraph.java">CloneGraph.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/f31acbe87343f217d23d57b9a07338c7eddcdbc6" class="message" data-pjax="true" title="Bunch of leetcode qs">Bunch of leetcode qs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-06-04T03:31:17Z" title="Jun 4, 2016, 9:01 AM GMT+5:30">8 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/ConvertOneWordToAnother.java" class="js-navigation-open" id="1280030e1e31bd4c59a576dd96c56f63-74ddd0f02a3c4e5ca8ea6888c81c512a151cc09d" title="ConvertOneWordToAnother.java">ConvertOneWordToAnother.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/CourseSchedule.java" class="js-navigation-open" id="4c6a06127ad05d4a7ea2a9414d3e5f5a-a847b58c717aaa729224ac347e8dc0a539cba912" title="CourseSchedule.java">CourseSchedule.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/d03c85d6f7f6b11183004cb62cd3d7b99a5920d2" class="message" data-pjax="true" title="Course schedule program">Course schedule program</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-05-18T05:56:45Z" title="May 18, 2016, 11:26 AM GMT+5:30">8 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/CycleInDirectedGraph.java" class="js-navigation-open" id="38d20d69f009b418bfe17e0cbceba9c2-f96c2627ca31cd8a1a8a77aeb1e9ac2557deb8a2" title="CycleInDirectedGraph.java">CycleInDirectedGraph.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/ab8ff322e90b5a9e6b215d5ebc4c35b2e0d3bdf8" class="message" data-pjax="true" title="Removing unused imports">Removing unused imports</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-01-26T19:53:05Z" title="Jan 27, 2016, 1:23 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/CycleUndirectedGraph.java" class="js-navigation-open" id="0a30bdcebf9f44683dcf8a99b3407ce6-93e3b9df216d5e5ba0109b72aa5559cd9dba6ac9" title="CycleUndirectedGraph.java">CycleUndirectedGraph.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/9859319dd1b6f5be6380510e59a2c632c1578c78" class="message" data-pjax="true" title="Adding more docs">Adding more docs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-08-01T02:58:05Z" title="Aug 1, 2015, 8:28 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/DAGShortestPathTopological.java" class="js-navigation-open" id="16302c1f5a797d6a5bdfd0bcd99c3622-e7efd1f178b08c3e874b9bca7bc9da4ff178be20" title="DAGShortestPathTopological.java">DAGShortestPathTopological.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/DijkstraShortestPath.java" class="js-navigation-open" id="f33037b6d010cc7504a154b41f5b92a6-2cb3f8d614edd4582fae1cf56e52ced589b6f8de" title="DijkstraShortestPath.java">DijkstraShortestPath.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/513577a465df530b183d38fcf16b17ea22df9ca9" class="message" data-pjax="true" title="update dijkstra code">update dijkstra code</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-28T06:22:15Z" title="Oct 28, 2015, 11:52 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/DirectedGraphConnectivity.java" class="js-navigation-open" id="8f1c07f67fb6485592bdd0777c45dc15-3cd9c948168ccd416a7edf1e4be508c0bbcd14d6" title="DirectedGraphConnectivity.java">DirectedGraphConnectivity.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/DisjointSet.java" class="js-navigation-open" id="a9a5c602c4d079ee22c4b517d4cef803-0a3e9ab71e15529d757beaf4238a619c7720c851" title="DisjointSet.java">DisjointSet.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/3f5a1af80b002ec751cce23e0db644b94d8c18b4" class="message" data-pjax="true" title="formatting in disjoint set">formatting in disjoint set</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-03-30T06:34:41Z" title="Mar 30, 2016, 12:04 PM GMT+5:30">10 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/EulerianPathAndCircuit.java" class="js-navigation-open" id="fef45791f60b6837e54e8cd908514fbc-e206e7fb525dc95afc12541da1320f4fafcb82ee" title="EulerianPathAndCircuit.java">EulerianPathAndCircuit.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/c01a2764508f87a1a30798ba5461bf5538cd6785" class="message" data-pjax="true" title="Remove unnecessary semicolon">Remove unnecessary semicolon</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-01-25T14:32:17Z" title="Jan 25, 2016, 8:02 PM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/EvaluateDivison.java" class="js-navigation-open" id="db47df1d0ed96d5ef2f1f719c6508422-97880343fc77dbaa5b246c8d5459cbdb1ee10772" title="EvaluateDivison.java">EvaluateDivison.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/4d3589b3f83865cb76b4fcc34b9f35aed7d13e4e" class="message" data-pjax="true" title="Evaluate division">Evaluate division</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-11-01T07:06:08Z" title="Nov 1, 2016, 12:36 PM GMT+5:30">3 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/FillOsWIthXsIfSurroundedByXs.java" class="js-navigation-open" id="cf5fbc6a55ddb0f69f5f38ae807329b1-9709705796ddd93f6de119f805317825a2eeef25" title="FillOsWIthXsIfSurroundedByXs.java">FillOsWIthXsIfSurroundedByXs.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/a72be4dc55f11c9baf4346c1acb1de17fdbbab00" class="message" data-pjax="true" title="update surround by x qs">update surround by x qs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-17T19:33:18Z" title="Apr 18, 2016, 1:03 AM GMT+5:30">9 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/FloodFillAlgorithm.java" class="js-navigation-open" id="94274d665cda1d4c29f7d1dfaaca453a-30500680a6018469d48829053296e692ee2a6761" title="FloodFillAlgorithm.java">FloodFillAlgorithm.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/FloydWarshallAllPairShortestPath.java" class="js-navigation-open" id="ba81d01ce2b6cf4dd8315d18e7c18686-b166c21410540de084dd52f33c09b7eeef7f7413" title="FloydWarshallAllPairShortestPath.java">FloydWarshallAllPairShortestPath.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/4fd9e1e03b0c54982db9fe38742eac92840c4388" class="message" data-pjax="true" title="floyd warshall all pair shortest path">floyd warshall all pair shortest path</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-12-16T00:49:40Z" title="Dec 16, 2015, 6:19 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/FordFulkerson.java" class="js-navigation-open" id="c011b06d065bbb313b2d860bf277c6df-6506ddf324a09047ae9375a79107c01bd4534a39" title="FordFulkerson.java">FordFulkerson.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/2081ce5242f161f3a7d56221ee33e7f334e6ff82" class="message" data-pjax="true" title="changes in ff">changes in ff</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-01-02T22:04:21Z" title="Jan 3, 2016, 3:34 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/Graph.java" class="js-navigation-open" id="37ae16fc03d55e5f0b19f929450f89ba-fea78b74fe7f6c1f3a3612fd60e3c7903cb2c2a1" title="Graph.java">Graph.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/e2ac079b02216ce43aeeb5810c6b35a0ff3822ad" class="message" data-pjax="true" title="python version of graph">python version of graph</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-12-14T04:27:33Z" title="Dec 14, 2015, 9:57 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/GraphColoring.java" class="js-navigation-open" id="1ac29ef2bcaa6fd00323d73293523510-a7aef20d036656ce588037e538d4418c38be6d94" title="GraphColoring.java">GraphColoring.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/GraphTraversal.java" class="js-navigation-open" id="8f5cf176e92281c5d5d0940ac4f3644e-45cfc01e7815be6bff6439f3f1671a287fc9d015" title="GraphTraversal.java">GraphTraversal.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/HamiltonianCycle.java" class="js-navigation-open" id="35ecf7f5c550ae93ad0ccf9842ae3889-8b9d1229eda75c68a7e7098eaf2de1bd1d58bbfe" title="HamiltonianCycle.java">HamiltonianCycle.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/KruskalMST.java" class="js-navigation-open" id="d34043deec62f83b988f4894b06e82be-4a8f17cb61e736add2d9ce1156c6c80e1a6b49b5" title="KruskalMST.java">KruskalMST.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/79fb7b38e692f72a0df40e92c99d7e020cbf7a99" class="message" data-pjax="true" title="Kruskal added back">Kruskal added back</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-25T05:10:42Z" title="Oct 25, 2015, 10:40 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/MaximumBiparteMatching.java" class="js-navigation-open" id="7000956aed1b7f1bfa66a6d8b736c3af-07256a5c2b00aeaa6a0c40b47f31f5810a5e4972" title="MaximumBiparteMatching.java">MaximumBiparteMatching.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/MinimumHeightTree.java" class="js-navigation-open" id="2e6ea4772a80e33216d96d2e77d18c3c-d8dcdecfc3731e49b1e7349dc5b59f49e637b2f1" title="MinimumHeightTree.java">MinimumHeightTree.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/0c943ca42cb5601419f0e34cef30c6102c9c9152" class="message" data-pjax="true" title="renaming file">renaming file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-03-08T23:33:33Z" title="Mar 9, 2016, 5:03 AM GMT+5:30">11 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/NumberOfIsland.java" class="js-navigation-open" id="dc4d3b46ee50f9454874dfe6317322c6-0cff9b3809768e209f8e2a15e9774147d6a71a09" title="NumberOfIsland.java">NumberOfIsland.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/NumberOfIslandDynamic.java" class="js-navigation-open" id="15065fe298ef10020e212c6f81a79ba4-18692c0aeead04c625e65dec3a26002aa250e0a3" title="NumberOfIslandDynamic.java">NumberOfIslandDynamic.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/f31acbe87343f217d23d57b9a07338c7eddcdbc6" class="message" data-pjax="true" title="Bunch of leetcode qs">Bunch of leetcode qs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-06-04T03:31:17Z" title="Jun 4, 2016, 9:01 AM GMT+5:30">8 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/NumberofTriangles.java" class="js-navigation-open" id="72a6e0264f18eeb38ff7ec5af0b1636b-bf0d48ac69a7f0437307961a93bde2bad3e2d48f" title="NumberofTriangles.java">NumberofTriangles.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/PrimMST.java" class="js-navigation-open" id="863f23cafe3e24678378507204029950-bbd67b871678e28673f8a233c680688ebffdc725" title="PrimMST.java">PrimMST.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/c29cb460233bc30e491324ed67a5b0f62d3a3664" class="message" data-pjax="true" title="Updating prim mst algorithm">Updating prim mst algorithm</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-26T06:09:51Z" title="Oct 26, 2015, 11:39 AM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/PrintAllPathFromSourceToDestination.java" class="js-navigation-open" id="3cf0d2f5d4e68d7c0d8d0e2f894d4f7a-c3d4293ae0c1e78925f4136a8fd92269a0d73933" title="PrintAllPathFromSourceToDestination.java">PrintAllPathFromSourceToDestination.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item navigation-focus">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/ShortestDistanceFromExit.java" class="js-navigation-open" id="4684de6fef5ac974f8cd5c7444372991-636035cba7725f5d69c89f159f46751fd16ac941" title="ShortestDistanceFromExit.java">ShortestDistanceFromExit.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/c01a2764508f87a1a30798ba5461bf5538cd6785" class="message" data-pjax="true" title="Remove unnecessary semicolon">Remove unnecessary semicolon</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-01-25T14:32:17Z" title="Jan 25, 2016, 8:02 PM GMT+5:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/StronglyConnectedComponent.java" class="js-navigation-open" id="743a62111187ae24576e6804b1e6983a-eac4514f51bc127d7d33ad7aa443c4d560c4e004" title="StronglyConnectedComponent.java">StronglyConnectedComponent.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/a6f6e2516b78102e2d01f770c77bb8e938a310bc" class="message" data-pjax="true" title="Cleaning up code for Strongly connected components">Cleaning up code for Strongly connected components</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-08-13T07:05:33Z" title="Aug 13, 2015, 12:35 PM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/TarjanStronglyConnectedComponent.java" class="js-navigation-open" id="9887e2e70029033bf31f8156dd684a00-cf7577ed95f9894d5d4d3b86d25a0cc96e300f80" title="TarjanStronglyConnectedComponent.java">TarjanStronglyConnectedComponent.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/5fdbdf7ed097336a4857ca9913beecba431d4e32" class="message" data-pjax="true" title="Tarjan&#39;s strongly connected component">Tarjan's strongly connected component</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-08-17T06:11:06Z" title="Aug 17, 2015, 11:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/TopologicalSort.java" class="js-navigation-open" id="a80df71d8ba17c550f2d636fa92f2d70-16cf3af589a12455635367a7eb435f7856b5367e" title="TopologicalSort.java">TopologicalSort.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/ee891509f659319ddda8ca448c12abf784186ada" class="message" data-pjax="true" title="Adding docs on topological sort">Adding docs on topological sort</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-08-03T01:29:05Z" title="Aug 3, 2015, 6:59 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/TransitiveClosure.java" class="js-navigation-open" id="49762ab54b6393635bffa24df62aac34-8a9e02e6e1732626aea3ca02d1457e8355f629b2" title="TransitiveClosure.java">TransitiveClosure.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/6b79712c2142bdae7bf13d2feb1b02f680d6f97f" class="message" data-pjax="true" title="Fixing directory structure for class">Fixing directory structure for class</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-07-16T22:00:28Z" title="Jul 17, 2015, 3:30 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/TravelingSalesmanHeldKarp.java" class="js-navigation-open" id="dcd3a1e8c97172023743d7ede577f23a-ca0114dbcf95e2d428152b53b19f3f77c9a20feb" title="TravelingSalesmanHeldKarp.java">TravelingSalesmanHeldKarp.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/4e136019b875cc3f3c5ae1c2cbb54ab501c16460" class="message" data-pjax="true" title="update tsp code for correct sorting">update tsp code for correct sorting</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-06T02:46:02Z" title="Apr 6, 2016, 8:16 AM GMT+5:30">10 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/ValidTree.java" class="js-navigation-open" id="a46e662f42fce1dfb66c47de95c46d06-b018a10ef29f7e9bd30b631cb926f4b75fdd19e0" title="ValidTree.java">ValidTree.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/f31acbe87343f217d23d57b9a07338c7eddcdbc6" class="message" data-pjax="true" title="Bunch of leetcode qs">Bunch of leetcode qs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-06-04T03:31:17Z" title="Jun 4, 2016, 9:01 AM GMT+5:30">8 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/WallsAndGates.java" class="js-navigation-open" id="7d178c943982376d57b28bca97a0fd43-8d25eda2899564b71d6b78d8152d8e41b28b181a" title="WallsAndGates.java">WallsAndGates.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/c236842cbf23d18d79fe4dc324d3956c1ad72497" class="message" data-pjax="true" title="Wall and gates question">Wall and gates question</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-04T02:52:14Z" title="Apr 4, 2016, 8:22 AM GMT+5:30">10 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/mission-peace/interview/blob/master/src/com/interview/graph/WordLadder.java" class="js-navigation-open" id="a3e031c3899f07896873d3246487d2cc-bb5905284c9b7b0a5d91e001aa15aa5bb8399ef9" title="WordLadder.java">WordLadder.java</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/mission-peace/interview/commit/41617c150d4d204b32121274154209999e0df199" class="message" data-pjax="true" title="Update in word ladder">Update in word ladder</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-10-17T02:04:30Z" title="Oct 17, 2016, 7:34 AM GMT+5:30">3 months ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>© 2017 <span title="0.09846s from github-fe-5989992.cp1-iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+      </button>
+      You can't perform that action at this time.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-DuHm14fdrEMV8PukK66JGmbWhATwRMQvVGacjAUfAWk=" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/frameworks-0ee1e6d787ddac4315f0fba42bae891a66d68404f044c42f54669c8c051f0169.js.download"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-ivhEPleCsZ6xaFqFhFmeoPOJ01eAYLQRx8fIRGkRBcM=" src="./interview_src_com_interview_graph at master · mission-peace_interview · GitHub_files/github-8af8443e5782b19eb1685a8584599ea0f389d3578060b411c7c7c844691105c3.js.download"></script>
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="https://github.com/mission-peace/interview/tree/master/src/com/interview/graph">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+
+</body><script id="pb_blockScript">function inject() {
+		var originalOpenWndFnKey = "originalOpenFunction";
+		var originalWindowOpenFn = window.open;
+		var originalCreateElementFn = document.createElement;
+		var originalCreateEventFn = document.createEvent;
+		var windowsWithNames = {};
+		var timeSinceCreateAElement = 0;
+		var lastCreatedAElement = null;
+		var fullScreenOpenTime = void 0;
+		var parentOrigin = window.location != window.parent.location ? document.referrer : document.location;
+
+		window[originalOpenWndFnKey] = window.open; // save the original open window as global param
+		function newWindowOpenFn() {
+			var openWndArguments = arguments;
+			var useOriginalOpenWnd = true;
+			var generatedWindow = null;
+
+			function blockedWndNotification(openWndArguments) {
+				parent.postMessage({ type: "blockedWindow", args: JSON.stringify(openWndArguments) }, parentOrigin);
+			}
+
+			function getWindowName(openWndArguments) {
+				var windowName = openWndArguments[1];
+				if (windowName != null && !["_blank", "_parent", "_self", "_top"].includes(windowName)) {
+					return windowName;
+				}
+
+				return null;
+			}
+
+			function copyMissingProperties(src, dest) {
+				var prop = void 0;
+				for (prop in src) {
+					try {
+						if (dest[prop] === undefined && src[prop]) {
+							dest[prop] = src[prop];
+						}
+					} catch (e) {}
+				}
+				return dest;
+			}
+
+			// the element who registered to the event
+			var capturingElement = null;
+			if (window.event != null) {
+				capturingElement = window.event.currentTarget;
+			}
+
+			if (capturingElement == null) {
+				var caller = openWndArguments.callee;
+				while (caller.arguments != null && caller.arguments.callee.caller != null) {
+					caller = caller.arguments.callee.caller;
+				}
+				if (caller.arguments != null && caller.arguments.length > 0 && caller.arguments[0].currentTarget != null) {
+					capturingElement = caller.arguments[0].currentTarget;
+				}
+			}
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Blocked if a click on background element occurred (<body> or document)
+			/////////////////////////////////////////////////////////////////////////////////
+
+			if (capturingElement != null && (capturingElement instanceof Window || capturingElement === document || capturingElement.URL != null && capturingElement.body != null || capturingElement.nodeName != null && (capturingElement.nodeName.toLowerCase() == "body" || capturingElement.nodeName.toLowerCase() == "#document"))) {
+				window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because it was triggered by the " + capturingElement.nodeName + " element";
+				useOriginalOpenWnd = false;
+			} else {
+				useOriginalOpenWnd = true;
+			}
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Block if a full screen was just initiated while opening this url.
+			/////////////////////////////////////////////////////////////////////////////////
+
+			var fullScreenElement = document.webkitFullscreenElement || document.mozFullscreenElement || document.fullscreenElement;
+			if (new Date().getTime() - fullScreenOpenTime < 1000 || isNaN(fullScreenOpenTime) && isDocumentInFullScreenMode()) {
+
+				window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because a full screen was just initiated while opening this url.";
+
+				/* JRA REMOVED
+	    if (window[script_params.fullScreenFnKey]) {
+	    window.clearTimeout(window[script_params.fullScreenFnKey]);
+	    }
+	    */
+
+				if (document.exitFullscreen) {
+					document.exitFullscreen();
+				} else if (document.mozCancelFullScreen) {
+					document.mozCancelFullScreen();
+				} else if (document.webkitCancelFullScreen) {
+					document.webkitCancelFullScreen();
+				}
+
+				useOriginalOpenWnd = false;
+			}
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+			if (useOriginalOpenWnd == true) {
+				generatedWindow = originalWindowOpenFn.apply(this, openWndArguments);
+				// save the window by name, for latter use.
+				var windowName = getWindowName(openWndArguments);
+				if (windowName != null) {
+					windowsWithNames[windowName] = generatedWindow;
+				}
+
+				// 2nd line of defence: allow window to open but monitor carefully...
+
+				/////////////////////////////////////////////////////////////////////////////////
+				// Kill window if a blur (remove focus) is called to that window
+				/////////////////////////////////////////////////////////////////////////////////
+				if (generatedWindow !== window) {
+					(function () {
+						var openTime = new Date().getTime();
+						var originalWndBlurFn = generatedWindow.blur;
+						generatedWindow.blur = function () {
+							if (new Date().getTime() - openTime < 1000 /* one second */) {
+									window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because a it was blured";
+									generatedWindow.close();
+									blockedWndNotification(openWndArguments);
+								} else {
+								originalWndBlurFn();
+							}
+						};
+					})();
+				}
+				/////////////////////////////////////////////////////////////////////////////////
+			} else {
+				var windowName;
+
+				(function () {
+					// (useOriginalOpenWnd == false)
+
+					var location = {
+						href: openWndArguments[0]
+					};
+					location.replace = function (url) {
+						location.href = url;
+					};
+
+					generatedWindow = {
+						close: function close() {
+							return true;
+						},
+						test: function test() {
+							return true;
+						},
+						blur: function blur() {
+							return true;
+						},
+						focus: function focus() {
+							return true;
+						},
+						showModelessDialog: function showModelessDialog() {
+							return true;
+						},
+						showModalDialog: function showModalDialog() {
+							return true;
+						},
+						prompt: function prompt() {
+							return true;
+						},
+						confirm: function confirm() {
+							return true;
+						},
+						alert: function alert() {
+							return true;
+						},
+						moveTo: function moveTo() {
+							return true;
+						},
+						moveBy: function moveBy() {
+							return true;
+						},
+						resizeTo: function resizeTo() {
+							return true;
+						},
+						resizeBy: function resizeBy() {
+							return true;
+						},
+						scrollBy: function scrollBy() {
+							return true;
+						},
+						scrollTo: function scrollTo() {
+							return true;
+						},
+						getSelection: function getSelection() {
+							return true;
+						},
+						onunload: function onunload() {
+							return true;
+						},
+						print: function print() {
+							return true;
+						},
+						open: function open() {
+							return this;
+						},
+
+						opener: window,
+						closed: false,
+						innerHeight: 480,
+						innerWidth: 640,
+						name: openWndArguments[1],
+						location: location,
+						document: { location: location }
+					};
+
+					copyMissingProperties(window, generatedWindow);
+
+					generatedWindow.window = generatedWindow;
+
+					windowName = getWindowName(openWndArguments);
+
+					if (windowName != null) {
+						try {
+							// originalWindowOpenFn("", windowName).close();
+							windowsWithNames[windowName].close();
+						} catch (err) {}
+					}
+					//why set timeout?
+					setTimeout(function () {
+						var url = void 0;
+						if (!(generatedWindow.location instanceof Object)) {
+							url = generatedWindow.location;
+						} else if (!(generatedWindow.document.location instanceof Object)) {
+							url = generatedWindow.document.location;
+						} else if (location.href != null) {
+							url = location.href;
+						} else {
+							url = openWndArguments[0];
+						}
+						openWndArguments[0] = url;
+						blockedWndNotification(openWndArguments);
+					}, 100);
+				})();
+			}
+
+			return generatedWindow;
+		}
+
+		/////////////////////////////////////////////////////////////////////////////////
+		// Replace the window open method with Poper Blocker's
+		/////////////////////////////////////////////////////////////////////////////////
+		window.open = function () {
+			try {
+				return newWindowOpenFn.apply(this, arguments);
+			} catch (err) {
+				return null;
+			}
+		};
+		/////////////////////////////////////////////////////////////////////////////////
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Monitor dynamic html element creation to prevent generating <a> elements with click dispatching event
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////
+		document.createElement = function () {
+
+			var newElement = originalCreateElementFn.apply(document, arguments);
+
+			if (arguments[0] == "a" || arguments[0] == "A") {
+				(function () {
+
+					timeSinceCreateAElement = new Date().getTime();
+
+					var originalDispatchEventFn = newElement.dispatchEvent;
+
+					newElement.dispatchEvent = function (event) {
+						if (event.type != null && ("" + event.type).toLocaleLowerCase() == "click") {
+							window.pbreason = "blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag";
+							parent.postMessage({
+								type: "blockedWindow",
+								args: JSON.stringify({ "0": newElement.href })
+							}, parentOrigin);
+							return true;
+						}
+
+						return originalDispatchEventFn(event);
+					};
+
+					lastCreatedAElement = newElement;
+				})();
+			}
+
+			return newElement;
+		};
+		/////////////////////////////////////////////////////////////////////////////////
+
+
+		/////////////////////////////////////////////////////////////////////////////////
+		// Block artificial mouse click on frashly created <a> elements
+		/////////////////////////////////////////////////////////////////////////////////
+		document.createEvent = function () {
+			try {
+				if (arguments[0].toLowerCase().includes("mouse") && new Date().getTime() - timeSinceCreateAElement <= 50) {
+					window.pbreason = "Blocked because 'a' element was recently created and " + arguments[0] + " event was created shortly after";
+					arguments[0] = lastCreatedAElement.href;
+					parent.postMessage({
+						type: "blockedWindow",
+						args: JSON.stringify({ "0": lastCreatedAElement.href })
+					}, parentOrigin);
+					return null;
+				}
+				return originalCreateEventFn.apply(document, arguments);
+			} catch (err) {}
+		};
+		/////////////////////////////////////////////////////////////////////////////////
+
+
+		/////////////////////////////////////////////////////////////////////////////////
+		// Monitor full screen requests
+		/////////////////////////////////////////////////////////////////////////////////
+		function onFullScreen(isInFullScreenMode) {
+			if (isInFullScreenMode) {
+				fullScreenOpenTime = new Date().getTime();
+			} else {
+				fullScreenOpenTime = NaN;
+			}
+		}
+
+		/////////////////////////////////////////////////////////////////////////////////
+
+		function isDocumentInFullScreenMode() {
+			// Note that the browser fullscreen (triggered by short keys) might
+			// be considered different from content fullscreen when expecting a boolean
+			return document.fullScreenElement && document.fullScreenElement !== null || // alternative standard methods
+			document.mozFullscreenElement != null || document.webkitFullscreenElement != null; // current working methods
+		}
+
+		document.addEventListener("fullscreenchange", function () {
+			onFullScreen(document.fullscreen);
+		}, false);
+
+		document.addEventListener("mozfullscreenchange", function () {
+			onFullScreen(document.mozFullScreen);
+		}, false);
+
+		document.addEventListener("webkitfullscreenchange", function () {
+			onFullScreen(document.webkitIsFullScreen);
+		}, false);
+	}</script><script>inject()</script></html>
