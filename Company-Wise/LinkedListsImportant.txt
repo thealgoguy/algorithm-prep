@@ -1,0 +1,40 @@
+
+Note : A good amount of LL problems can be solved by splitting the list in some way and then merging as the need of the problem
+1. sum of two floating point linked lists
+2. sort a ll that is sorted in alternating ascending-descending order...split  the list and merge
+3. in-place rearrange-a-given-linked-list-in-place/ 
+4. detect & remove cycle
+5. maximum-sum-linked-list-two-sorted-linked-lists-common-nodes/
+6. merge sort on linked list....efficient b/c merging step takes constant space unlike in arrays which require O(n) space
+7. reverse recursively and iteratively
+8. reverses a linked list in groups of k
+9.  Sort a linked list of 0s, 1s and 2s.....split and merge
+10. Find a triplet from three linked lists with sum equal to a given number
+11. merge k sorted lists...priority queue approach. use dummy node to avoid unnecessary null checks
+12. Check for palindrome ..recursive and iterative
+13. **Quick sort in a linked list.....partition step is tricky
+14. Clone a LL with next/random pointer. (Note random linkes can't be set on fly. So first create the clone and then set random links. Give hashing and O(1) approach).http://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/ http://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/
+15. Point random link to next higher value node in a linked list with next/random pointer. (Copy next to random and do merge sort on list of random pointers)
+16. Reverse DLL. 
+17. **Convert a BT to DLL(use reverse inorder traversal or inorder with savoing previous, keep adding nodes at head. there are 3 approaches). Convert sorted DLL to BST. convert BT to CDLL(convert-a-binary-tree-to-a-circular-doubly-link-list).
+18. sorted LL to BBST. http://www.geeksforgeeks.org/?p=17063
+19. Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. Preseve the order. (Split and merge)
+
+
+Read about threaded BTs and there use in avoiding recursive traversal
+
+------BST------
+identical bst check.
+sum tree check and convert
+Check for Identical BSTs without building the trees(Given two arrays which represent a sequence of keys)
+connect-nodes-at-same-level-with-o1-extra-space
+**(lovely question)find-maximum-path-sum-two-leaves-binary-tree
+serialize/deserialize n-ry tree
+Create BST from preorder(use min-max approach and recurse, can also do using stack), inorder, postorder traversals
+Total number of BST form n keys....nth catalan number (2n!)/n!*(n+1)! = 2nCn/(n+1)
+Inorder successor .....iterative
+**kth smallest elememt in BST. using rverse inorder. Using Morris(no recursion stack used)
+LCA, BST check using order-statistics
+in-place-conversion-of-sorted-dll-to-balanced-bst
+In questions of deletion/updation of some node in bst, postorder traversal is efficient and easy
+find-if-there-is-a-triplet-in-bst-that-adds-to-0.(Convret bst to Dll and then find triplet)

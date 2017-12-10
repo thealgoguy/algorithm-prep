@@ -1,0 +1,43 @@
+WhatsAPp messaging service :
+
+Features : 
+1. One-one text send. Or Group chat
+2. Sent/Delivered/Read notofication : though acknowlegement sent by server to the sender after reciving the same from receiver
+3. Push notification : fire and forget
+
+Each message has a message id, sender, receiver, and content(text/video/file/etc)
+Messages are deivered via an intermediate server, which has queue for every user. 
+Since receiver may not be online, each messgae is queued at the server(there can be many server, hwo ordered deliver of messages is maintained ? My thought : we can have mesages arrived for a particular receiver byy a particular sender in a priority queue based on arrival time...so that older message are delivered first). These queues are
+ephimeral(deleted once empty)
+For push notification we can have other servers.
+
+For storing message history and back up , we can use dropbox, or google cloud storage, etc.
+http://techdive.in/java/snake-and-ladder-game
+
+---------------------------
+Parking lot
+Chess game
+Snake&Ladder game
+http://massivetechinterview.blogspot.in/2015/07/design-chess-game-using-oo-principles.html
+Rule design: https://inst.eecs.berkeley.edu/~cs162/sp05/Nachos/chess.shtml
+https://codereview.stackexchange.com/questions/53875/generating-possible-chess-moves
+Elevator design
+distributed hash table
+https://www.programcreek.com/2016/08/design-a-data-structure-with-insert-delete-getmostfrequent-of-o1/
+
+
+Dist Design short : https://prismoskills.appspot.com/lessons/System_Design_and_Big_Data/Chapter_06_-_System_Design.jsp
+design your own messaging queue like RabitMQ
+what does sharding hs to do withh indexes in rdms ?
+Hit Counter
+TinyUrl
+Most popular product in the last minute/hour/day
+versioning system like GIT/SVN
+WhatsApp messageing service
+FaceBook/Twiiter/
+you tube, instagram
+News feed system
+Recommendation system for youtube, books or other product
+FoodPanda restaurant ssearch app
+Uber Cab service
+Google drive
