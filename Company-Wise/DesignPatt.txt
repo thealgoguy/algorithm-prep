@@ -1,0 +1,32 @@
+Open closed pattern
+
+Command Pattern  :
+1. basic idea : delegate operation to an object - function pointer. what fp is to C, we have interface to Java                     
+2. Runnable obj in java is a command obj. a command obj contains info & operation to be executed at some later time
+3. COmmand obj has state info plus methods
+4. Undo operation is implemented as command pattern
+5. Command obj is an interface with various implementations of the command
+
+Strategy Pattern :
+1. interface inheritenceand not subclassing(subclassing will make complicated)
+2. Layout example
+3. its a specific use of command pattern
+An object has to do an operation which can be done in a number of ways(there can many more ways added later). These operations do not depend upon the state of the obkect. hence, its not a good idea to create as many subclasses of the object for doing the operation. think why ? What we can do is extrack the operation into an interface and have as many implementaions. We can then pass the interface to the object constructor as a strategy to do the operation. Remeber the layout example.
+
+COR - Chain Of Resp.
+
+Template method pat - de;egation based, super class sub class psttern. ask for help, not for information. saves violation of replacement priciple....a change 
+
+Open closed principle : The class should be open for adding new facilities but cosed for modification. This can be solved with derivation/subclassing but subclassic causes maintenance issue so its not a good idea(a change in super class will require maintenance in all subclasses). Fragile base class big problem
+Idea of builder : extend a class without subclassing the base class
+
+what is interface segregation principal ?
+diff bw inheritence and composition
+Class Adapter – This form uses java inheritance and extends the source interface, in our case Socket class.
+Object Adapter – This form uses Java Composition and adapter contains the source object.
+
+------
+Command Pattern : Invoker, Command Interface anf concerete commands, Receiver. An invoker contains various commands that is to be executed on a receiver. The concrete commands are passed to the invoker at instantiation of the invoker.
+
+Strategy Pattern : Uses compostion over inheritence
+

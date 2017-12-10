@@ -1,0 +1,32 @@
+
+		boolean found = true;
+		for(int r=0; r<n; r++) {
+			int l1=-1, l2=-1;
+			for(int j=m-1; j>0; j--){
+				if(l2<0 && isSafe(r,j)) {
+					l2 = j;
+					continue;
+				} 
+				if(l2>0 && l1<0 && isSafe(r,j)) {
+					l1 = j;
+				}
+				if(l1>=0 && l2>0) {
+					if(fmap.consecutive(board[r][l1], board[r][l2])) {
+						board[r][l2] = board[r][l1]+board[r][l2];
+						//shift all cells to right
+						if(board[r][l2] == lastFib) {
+							System.out.println("Game ended, printing the final board config");
+							this.printBoard();
+							this.setGameEnded(true);
+							return;
+						}
+					}
+					else {
+						l2 = l1;
+						l1=-1;
+					}
+				}
+			}
+
+		}
+	

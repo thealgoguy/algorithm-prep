@@ -1,0 +1,76 @@
+SORTING - 
+1. Quicksort, merge sort. Time complexity
+
+1. Design a singleton class in java(use private constructor and public static method to access the constructor)
+Questions on hasmap implementations
+why is string immutable in java ? how to make a class immutable(make class final, a final class can't be subclassed) and advantages
+questions on collections/generics(just read some tricky ones, that's it)
+threading(wait notify sleep, join, thread states, etc, diff b/w Thread and runnable)
+Two thread given- 1st prints even numbers and 2nd prints odd numbers. Sync them to print natural numbers - 1 2 3 4 5 
+1st threads prints ping, 2nd prints pong. Sync them to print Ping Pong.
+2. Basic sql queries, subqueries and joins on tables, self join.
+3. heirachial query - connect by prior. Read with an example table of employee and managers.Print employee and their managers in each row.
+4. What is normalisation. Give example of table that needs to be normalised and then normalise it. Normal forms-1st, 2nd , 3rd.
+
+DESIGN questions - 
+
+1. What happens when you click on Add to my Cart on a website ? What tables will you use to implement this. How will you store offers, vouchers, etc. Design a class for this(eg Customer, Product, etc) and what would methods look like?
+2. design a class for working of lift/elevator.
+3. What tables will you use to implement url shortener, eg. bit.ly shortens large url to small one.(https://www.linkedin.com/pulse/20140805021301-7191519-url-shortening-how-does-it-work)
+
+
+Data structures(source - http://www.geeksforgeeks.org/data-structures/)
+LINKED LISTS
+1. basic operations on linked list - insertion, search, deleting a node(or entire LL), find size of LL, print node at kth position, etc.
+2. Print the middle of a given linked list. (Use two pointers-fast and slow, advance fast by two nodes and slow by one node till fast->next=NULL)
+3. Nth node from the end of a Linked List.
+4. Write a function to delete a Linked List
+5. Reverse a LL.
+6. Detect loop in a linked list. (Use two pointers fast and slow, fast)
+7. Function to check if a singly linked list is palindrome.( Sol1-use stack or recursion, sol 2 -use reverse the half of the LL, then compare two halves)
+8. Remove duplicates from a LL.
+9. Sort an unsorted LL.Give time complexity. Merge and quick sort. Insertion sort is easy for coding.
+10. Given only a pointer to a node to be deleted in a singly linked list, how do you delete it? (copy paste this question on above link)
+
+BINARY TREES AND BST
+1.Basic - create, insert, search.
+2.Delete from BST.(case1 - leaf node, case2-one child node, case3- 2 child node(this is tricky))
+3. Minimum or Maximum value in BST. Height/depth of BST
+4. Inorder successor/predecessor for a given key in BST
+5. Check if a give BT is BST.
+6. Diameter of BST. 
+7. Count leaves in BST
+8. Swap the left and right subtrees of BST.
+9. Construct Tree from given Inorder and Preorder traversals
+10. Root to leaf path sum equal to a given number.
+11. Print nodes at k distance from root
+
+ARRAYS :
+Find majority element in an array....a number occurring more than n/2 times(brute force gives O(n2) soln, sorting(nlogn),Moor's voting algo most efficient 
+Find the max and min element in a given array with minimal number of comparisons
+Find the second maximum element in an unsorted array of integers, using single for loop
+1. Binary serach(works only on sorted arrays) TC -log(n)
+2. Search in a circularly sorted array - 6,7,8,1,2,3,4 (Find the pivot element, the element less than both its adjacent guys, now do simple bin serach on left subarray and right subarray)
+3.  Search in a rowise and column wise sorted matrix - (http://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/)
+4. find the missing element in an array(use sum(n) approach and xor approach)
+Find if an unsorted array contains pair with given sum S(O((n3), use sorting(O(nlogn)+ taking two pointers start and end for traversing O(n)))
+Find number occuring odd number of times(return xor of array)
+Find the subarray with a given sum k in an unsorted array(give O(n) approach)
+A sorted array contains duplicates, find if X is repeated,also find its 1st occurence, last occurence(use bin search)
+Find the count of repeated element X in the sorted array(multiple elements are repeated)....Hint - use bin search to find 1st and last occurence of X in the array and then return the count as last_occur-first_occur+1
+Find whether an array is circularly sorted ....sorted array rotated clockwise or anti clockwise(hint-compare 1st and last elements of array, a[low] <=a[high] then false else true)
+A sorted array (with no duplicates) has been rotated n times. Find the value of n, given the circularly sorted array.(Hint - use bin search, use pivot property, no. of rotations = index of the pivot element in the circularly sorted array.)
+Search an element X in a circularly sorted array(how to handle duplicates).
+Print a 2D array in spiral order
+An unsorted array has elements from 1 to n-1 with possible duplicates. Return the array containing duplicates, give O(n) approach.
+Let's say you have a list of N+1 integers between 1 and N. You know there's at least one duplicate, but there might be more. For example, if N=3, your list might be 3, 1, 1, 3 or it might be 1, 3, 2, 2. Print out a number that appears in the list more than once.
+
+STRINGS :
+
+Check the string is Palindrome or not
+Remove duplicates in a String -- In place
+Reverse a string - Inplace
+Decide if 2 strings are anagrams or not ?
+Search for a given pattern in text [Rabin Karp Algorithm most efficient]
+Reverse the words in a given English sentence(in place), Ex - This is so sad. Ans - sad so is This. (Soln - reverse the sentence character by character - das os si sihT, now reverse word by word - sad so is This)
+Print all the anagrams present in a sentence. 

@@ -1,0 +1,68 @@
+maximum-size-square sub-matrix-with-all-1s-in-a-binary-matrix
+maximum size rectangular sub-matrix-with-all-1s-in-a-binary-matrix(dp approach and histogram approach with O(1) space)
+http://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+
+wiggle sort an array
+two sorted arrays given, find kth eleemnt in the merged array - O(n) using merge approah not actually merging. O(logk) using bin search.
+---median of unsorted array. using quick sort, selection sort, 
+median of median algo, quick select algo, minheap+max heap approach
+kth largest/smallest ...quick select, heap
+find median of stream of ints
+http://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/
+http://ocw.alfaisal.edu/NR/rdonlyres/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/30C68118-E436-4FE3-8C79-6BAFBB07D935/0/ps9sol.pdf
+find inversions in array
+http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/
+
+kernels ...diff b/w os and kernel....linux vs windows kernel ?
+Given a file with many strings. Find how many unique anagrams exists. (Hash table, BST and finally TRIE approach).
+Why double hashing required - collission resolution in hashmap
+when to use circular  buffer - use case
+Design distributed file system.
+Implement map reduce program very similar to word count.how wil u handle huge data in one reducer ?
+design msn
+
+factorial using matrix exponentiation
+
+https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp
+
+Given a file of 4 billion 32-bit integers, how to find one that appears at least twice
+http://stackoverflow.com/questions/7153659/find-an-integer-not-among-four-billion-given-ones
+Say we want to fit all integers into an array in memory. How much memory to do we need? we take all the integers (2^32) or 4 billion roughly then multiply it by 4 since each integer is represented by four bytes. We would need roughly 16GBytes of memory to put all representable integers into an array
+
+-------------------------------
+http://www.geeksforgeeks.org/lca-for-general-or-n-ary-trees-sparse-matrix-dp-approach-onlogn-ologn/
+johnson's algo - shortest path
+articulation points - tarjan's algo
+finding bridges 
+travelling salesman
+euler tour, hamiltonian cycle
+strongly connected comps
+
+---------------------------------------
+computauionla geometry
+1. dir b/w two vectors using cross product
+2. whether two lines intersect
+3. closest pair of points in plane
+4. convex hull : quick hull algo and Graham's scan
+5. find if a point is inside a polygon - http://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon and
+http://stackoverflow.com/questions/10673740/how-to-check-if-a-point-x-y-is-inside-a-polygon-in-the-cartesian-coordinate-sy
+find if a point is inside a triangle/circle
+--------------------------------------------------------------------------------------------------------------------------------------
+http://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/
+
+euler tour/ hamoltonian cycle/TSP
+biirectional search/ A* search
+max area under histo
+text justification
+factorial matrix expon
+fibonacci heap
+suffix array
+
+
+
+
+
+
+
+
+

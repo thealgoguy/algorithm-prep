@@ -1,0 +1,34 @@
+design database table that can store comments like facebook. but there could be hierarchy of replies possible. design table to store them and query them in a way that each complete set of comments with their reply can be resulted.
+a data structure to implement a map (zoom into the map, zoom out of the map and slide up, down, left and right).
+2. Design ranking system, like in oyo room, there could be different ranking systems like user feedback and audit feedback… 
+3. url shortening ...enable history n expiry tracking. scale for 10 million urls
+4. design db for hotel booking
+5. design snack and ladder games, ludo game
+elevator algo
+ola cab design
+web crawler design
+how does dns lookup work ?
+
+---DS----
+implement deque using circular array
+Given an array of integers,print all the pairs whose sum is present in array
+tower of hanoi
+rotate right a binary tree, maximum width of a bt
+How to get a random number from an array of length 100, without repetition. Fill array from 1 to 100 linearly. Find rand < 100 and return arr[rand] swap(rand, 99), then find rand < 99, return nd swap...continue
+tower of hanoi
+avl and b+ tree implementation.
+Indexing and use in databases
+Given a Binary Search Tree and an integer n, print the k nearest values to n
+DS to implement a map(zoom in, out, scroll up/left/right/down)
+
+DP remain - stock, largest rect in histogram, word break, boolean parenth, optimal bst with freq as keys
+KMP algo
+
+
+----------------
+Hotel booking application design. Database design with classes.design db for hotel booking **  constant time fetch. Query to update table if n number of rooms are booked for a hotel on a certain date.How to handle many users who are trying to book a same hotel room simultaneously.We have a centralized database of hotels and there are different hotels which also maintain their inventory on their side. These two databases need to be in sync always. How to manage this functionality if someone books and then cancels a room after 1 hour.
+what is use of indexing in query performance ?
+sql queries for finding min, max, 2nd ma, average, etc
+
+----
+DP - word wrap, boolean parenthes, stock profit maximization, histogram and matrix related, job scheduling

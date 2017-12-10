@@ -1,0 +1,23 @@
+Which DS for cache ?
+DS for cricket score - proprity queue
+2sum and 3sum problem
+http://www.geeksforgeeks.org/find-triplets-array-whose-sum-equal-zero/ 	
+--------
+Java 8 features - http://winterbe.com/posts/2014/03/16/java-8-tutorial/
+
+Implement blocking queue, thread pool,cyclic barrier, countdown latch.
+advantage of lock interface over synchronized in Java
+read about serialization/deserialization/externalizatipn, marker/tag interface
+read about reflection
+semaphores, atomic variable and concurrent map
+enums
+ThreadLocale
+
+how to implement a high performance cache allowing multiple readers but single writer at a time....concurrent map.
+thread-pool sizing - http://codeidol.com/java/java-concurrency/Applying-Thread-Pools/Sizing-Thread-Pools/
+
+what is park, unpark() in Lock objects ?
+
+-----------------
+LRU cache 
+external sortings

@@ -1,0 +1,55 @@
+HLD (Component wise segregation), LLD (Class & sequence diagram), Design patterns. Design tool if you’ve worked on any. Low Level Design, Component Design, Module design. ( Ex ; Design Parking Lot, Building Access System, Chess Game, Snake and Ladder game, chess etc..
+ O(log n) lock and O(log n) unlock
+ Design patterns. Design tool if you’ve worked on any.
+ 
+ how relational and non-relational databases work and what tradeoffs exist between them
+ distributed computing concepts - understanding of topics such as service oriented architectures, map-reduce, distributed caching, load balancing, etc. could help you formulate answers to some of the more complicated distributed architecture questions
+ 
+ OS topics that can affect code performance, such as: memory management, processes, threads, synchronization, paging, and multithreading
+ https://www.careercup.com/page?pid=microsoft-interview-questions   MUST VISIT
+ --------------------------------------------------------------
+ Design undo and redo operation in Microsoft Word like text editor.
+
+Spam Filter design
+Scheduler Design
+hit counter design
+Detect Misspelled localities from the 1000s of given addresses
+ For design 0 give a high level structure, sk if its ok ? then discuss bottlenecks
+ ) Design a URL shortening service.
+2) How would you design the feature in LinkedIn where it computes how many hops there are between you and another person?
+3) If you were to design a web platform for online chess games, how would you do that?
+**never write to disk...cache like crazy, use parallelization - multithreading
+https://www.careercup.com/page?pid=system-design-interview-questions
+http://highscalability.com/all-time-favorites/
+https://www.quora.com/What-are-the-best-design-interview-questions-youve-ever-asked-or-been-asked
+https://www.educative.io/collection/5668639101419520/5649050225344512   VVI Resource
+Design of everyday things (Donald Norman)
+
+----------------------------------
+A document and a list of words are given. You have to find minimum length window in the document where all the words can be found.
+implement a spell checker, which gives word suggestions based on the words which have already occurred
+http://www.geeksforgeeks.org/lca-for-general-or-n-ary-trees-sparse-matrix-dp-approach-onlogn-ologn/
+merge two bsts
+kth smallest element in single array- quick selelct, heap approach
+kth smalles in two arrays - 
+median of unsorted array in linear time - median of median algo, heap appl
+LL - detect and remove cycle, clone with random pointer, sort/merge, union/intersection, Convert binary tree to doubly linked list, 
+sorting of LL - merge/quick sort
+Data structure design for ‘Auto complete feature for search of file names - trie
+Number between twin primes is divisible by 6 or not. Proove it.
+Find median of an infinite stream of integers with limited memory  --min + max heap approach
+Ans - http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/, http://stackoverflow.com/questions/10657503/find-running-median-from-a-stream-of-integers
+http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-of-integer-stream/
+design your own BitSet API. All the methods like flip, set, reset, countOnes, etc..What data structure will you use.
+Sort 1 billion integers with limited memory. I told about sorting them chunk by chunk and then merging. He then asked me how to decide the chunk size. I explained with an example.Will this take the same amount of time if we have infinite memory. Itold about the access time difference in primary memory and secondary memory. Asked details about secondary memory, About disk technology, sector, seek time, rotational delay, etc.
+searchin an integer in a huge file with limited memory - bit map with multiple passes
+find largest k elements in a stream coming - use min heap of size k
+find k most frequent words from a file - http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/
+find words in  a matrix - trie
+Rearrange a given array in-place such that all the negative numbers occurs before positive numbers.(Maintain the order of all -ve and +ve numbers as given in the original array)
+k-way merge sort of k arrays
+Given a string str. You have to make this string to square string with maximum length. A square string is of the following format:
+str = x + x; where x is any string. Return length of this square string. Maybe LCS application.
+Design undo and redo operation in Microsoft Word like text editor. Design hit counter.
+You are given a text file. You have to return the list of starting index of the given word in text file. Design an efficient DS for that.
+http://www.geeksforgeeks.org/design-data-structures-for-a-very-large-social-network-like-facebook-or-linkedln/

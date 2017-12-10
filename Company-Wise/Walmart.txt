@@ -1,0 +1,62 @@
+java serialization, synchronization, inheritence, abstract, lambda expression, hashcode/equals, StringBuffer vs String vs StringBuilder, exception, Hashcode, Equals, Hashmap implementation. Lmbda expressions. Thread pool, latches and barriers. Thread.yield method ?
+Singleton Design Pattern (double locking mechanism  vs Enum. DL can be broken through reflection , enum can't be)
+Code for deadlock. weak/strong refrences in java. Comparable vs Comparator
+Design of distributive hashing, various problems and their solution
+**sort the stack/reverse the stack. BST to DLL, 
+**external sorting(Read from Ashish Sharma's blog). 
+BitMap. BitSet API in Java.
+
+
+Print boundary of BT, processing prefix/postfix/infix notation, ternary notation
+red black tree....B+ tree 
+Distributed system/Scalability concept
+Read 1000 balls puzzle
+
+http://www.geeksforgeeks.org/expression-evaluation/
+Print a matrix in spiral form(slick code) : https://www.youtube.com/watch?v=siKFOI8PNKM. But how to do in O(1) space ? There is a formula
+Given a binary stream, check divisibility by a number n. rem = 0; while(bit coming) r = (bit==0) ? (2*r%n) : (2*r+1)%n; return r%n==0
+Multiply 2 numbers using bitwise operators. Binary to hexa conversion. sum of all subarrays(remeber frequency formula)
+
+----- Data Structure Design------
+Find median of a stream of integers at any time.
+You have a stream of incoming integers. How will you store these numbers and implement following functions : GiveMax(), GiveSecond Max(), Delete Max(), DeleteSecondMax (), Add , Remove an element
+http://www.geeksforgeeks.org/efficiently-design-insert-delete-median-queries-set/
+kth most frequent word in a file(heap+trie)
+spell-checker, autosuggest
+
+---Design
+Design a Blog post website, which will notify all the subscriber of a user, when he posts some blog on the website(use case for Observer pattern)
+url shortenign, hit counter, LRU cache
+parking lot - using design pattern see leetcode forum. https://discuss.leetcode.com/topic/94763/parking-lot-design-using-oo-design
+snake ladder, see from gainlo. Chess. GIT design.
+5 ways for singleton pattern - https://discuss.leetcode.com/topic/94351/5-flavors-of-singleton/2
+
+-----Strings------
+Pattern searching : KMP, Z algo, Rabin karp, Manacher, suffix array/tree
+**ALIEN language - Given an alien language dictionary where the words are sorted, we need to figure out the list and order of the alphabets for that language. 2 approaches - topological sort. 2nd - BFS using degree map(see leetcode)
+Find out the longest repeating subsequence in a given string (Dynamic Programming)  - SOLVED. Find LCS(S, S)
+Word ladder problem(BFS) : Given a dictionary containing some words, and a start word and end word, you need to find the minimum number of conversion needed to convert start word to end word with the following restrictions :-
+1. Each intermediate word must be in the dictionary
+2. You can change only one character in the word to convert to another word.
+Example If You are given start word as ‘SAT’ and end word as ‘PAN
+and the dictionary contains words = [‘RAT’,’PAT’,’DAM’] then SAT -> PAT ->PAN is the answer........SOLVED
+word break problem(dp) - given a dictionary and a string, find if string can be partitioned into valid dict words. - SOLVED
+
+----Matrix DP----
+Largest sum rectangle in a matrix
+Largest square submatrix with all 1s in a boolean matrix. dp[i][j] = dp[i-1][j-1]+1 if(a[i][j]==1) and = Math.min(dp[i-1][j], dp[i][j-1]) if(a[i][j] != 1)
+Largest rectagular area in a histogram
+Largest rectangular submatrix with all 1s(DP approach, histogram approach)
+
+---Other DP-----
+stock profit max - 3 variations(leetcode), histogram, word wrap
+stock - https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/StockBuySellKTransactions.java
+with unlimited transactions, at most k transactions, with cooldown of 1 day. also consecutive buy/sells allowed and not allowed
+House coloring(DP) : There is a row of n houses, each house can be painted with one of the three colors: red, blue or green. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color. Find the minimum cost to paint all houses. -- https://www.programcreek.com/2014/05/leetcode-paint-house-java/ .Also see k-coloring soln with n stage dp...each stage has k choices). Also see house robbing problem where a robber has to maximime the eamount robbed without robbing consecutive houses.
+Range [L, R] is given. Need to find what is the maximum repeating digit in prime numbers between L and R (both inclusive). If more number of digits is repeated max times, return whichever digit is maximum. Eg: [2, 13] – maximum repeating digit is 1 among {2, 3, 5, 7, 11, 13}-- I solved on GFG
+**Given a number in form of array, maximize the number w.r.t allowed number of swaps (can swap only adjacent elements) – maximize(int[] data, int numSwaps)
+Eg: 1265 is number – if 1 swap allowed – maximum number we can get out of it is 2165. ---I solved it on GFG.
+**Given a number “S”, find out how many number of ways a, b, c, d (all > 1) can exist such that a+b+c+d = S;   DP problem...variation of coin change		
+f(s, n) = 1    if s = 0
+        = 0            if s != 0 and n = 0
+        = sum f(s - i, n - 1) over i in [0, s] otherwise
