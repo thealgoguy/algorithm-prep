@@ -36,7 +36,6 @@ public class JobSchedulingDeadlines {
 		for(i=0; i<5; i++) slots = Math.max(slots, jobs[i].deadline);
 		int timeslot []= new int[slots+1];
 		Arrays.fill(timeslot, -1);  //all slot sempty
-		for(i=0; i<5; i++) slots = Math.max(slots, jobs[i].deadline);
 		for(i=0; i<5; i++) {
 			int deadline = jobs[i].deadline;
 			for(int j=deadline; j>=1; j--) {

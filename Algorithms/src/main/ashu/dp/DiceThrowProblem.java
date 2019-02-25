@@ -24,9 +24,13 @@ public class DiceThrowProblem {
 		for(int i=0; i<=n; i++) dp[0][i] = 1;
 		for(int i=1; i<=x; i++) dp[i][0] = 0;
 		for(int i=1; i<=m && i<=x; i++) dp[i][1] = 1;
+		//iterate over sum incrementally
 		for(int i=1; i<=x; i++) {
+			//iterate over dices
 			for(int j=2; j<=n; j++) {
 			      dp[i][j] = 0;
+			      //value of jth dice can be in range [1, m] value[j] < i
+			      //can be solved using subproblems
 				for(int k=1; k<=m && k<i; k++) {
 					dp[i][j] +=  dp[i-k][j-1];
 				}

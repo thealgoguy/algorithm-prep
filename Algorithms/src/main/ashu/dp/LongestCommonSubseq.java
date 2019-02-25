@@ -8,7 +8,7 @@ public class LongestCommonSubseq {
 	  String s1 = sc.nextLine();
 	  String s2 = sc.nextLine();
 	  int n1 = s1.length(), n2 = s2.length();
-	  String [][] sol = new String[n1+1][n2+1];
+	  String [][] sol = new String[n1+1][n2+1]; //need to comsider empty string cases as well
 	  int dp [][] = new int[n1+1][n2+1];   // using 1 based indexing to avoid unnecessary code for handling array index out of bounds exception
 	  for(int i=0; i<=n1; i++) {
 		  for(int j=0; j<=n2; j++) {

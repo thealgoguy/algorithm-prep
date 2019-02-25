@@ -3,6 +3,8 @@ package main.ashu.dp;
 import java.util.ArrayList;
 import java.util.List;
 
+//find if there is a subset with given sum
+//more space optimized version - https://www.geeksforgeeks.org/subset-sum-problem-osum-space/
 public class SubsetSum {
 	public static void main (String[] args) {
 		int arr [] = {1, 2, 3, 4, 5};

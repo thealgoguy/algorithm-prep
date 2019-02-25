@@ -1,7 +1,8 @@
 package main.ashu.arrays;
 
+//Also called power set
+////Follow up - Generate subsets of size k
 public class AllSubsetsBF {
-   
 	public static void main(String args []) {
 		int a [] = {1,2,3,4};
 		int n = a.length;
@@ -9,7 +10,7 @@ public class AllSubsetsBF {
 		//print elements in the array corresponding to positions of set bits in the counter.
 		for(int cnt =0; cnt<(1<<n); cnt++) {
 			String str ="";
-			//check which all out of n bits are set in the counter.
+			//subset will include all those indexes from the array for which counter has set bit 
 			for(int i=0; i<n; i++) {
 				if((cnt & (1<<i)) > 0) str+=a[i]+" ";
 			}

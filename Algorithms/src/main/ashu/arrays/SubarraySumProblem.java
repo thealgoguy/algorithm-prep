@@ -3,11 +3,10 @@ package main.ashu.arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class SubarraySumProblem {
     public static void main(String args []) {
-    	int a [] = { 25, 12, 14, 22, 19, 15, 10, 23, 32 };
-    	int sum = 55;
+    	int a [] = {1, 4, 20, 3, 10, 5};
+    	int sum = 33;
     	//approach 1....window technique    	
     	subarray_window(a, sum);
     	//approach 2.....by storing prefix sum in map
@@ -21,16 +20,13 @@ public class SubarraySumProblem {
     	int curr = 0, i=0;
     	while(i < a.length) {
     		curr += a[i];
+    		//failure case check...keep shrinking from left
+    		while(start < i && curr >sum) {
+				curr -= a[start++];
+			}
+    		//success case check
     		if(curr == sum) {
     			System.out.println("Sum found between index "+start+" and "+i);
-    		}
-    		else if(curr > sum) {
-    			while(start < i && curr >sum) {
-    				curr -= a[start++];
-    			}
-    			if(curr == sum) {
-    				System.out.println("Sum found between index : "+start+" and "+i);
-    			}
     		}
     		i++;
     	}

@@ -19,16 +19,18 @@ public class CountInversionsInArray {
 	
 	public static int merge(int a[], int l, int mid, int r){
 		int i=l, j = mid+1;
-		int temp [] = new int[r-l+1];  //not required
+		//int temp [] = new int[r-l+1];  //not required
 		int k = 0;
 		int inv = 0;
 		while(i<=mid && j<=r) {
 			if(a[i] <= a[j]) {
-				temp[k++] = a[i++];
+				i++;
+				//temp[k++] = a[i++];
 			}
 			else {
 				inv += (mid-i+1);
-				temp[k++] = a[j++];
+				j++;
+				//temp[k++] = a[j++];
 			}
 		}
 		return inv;

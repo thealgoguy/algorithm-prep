@@ -13,6 +13,7 @@ public class LongestpalindSubseq {
 		   a[i+1] = s.charAt(i); 
 	   }  
 	   
+	   //think in terms of length
 	   //fill only the upper diagonal values
 	   for(int len=1; len<=n; len++) {  //instead of calculating n*n values calculate only 1+2+3....n=n*(n+1)/2 values
 		   for(int i=1; i<=n-len+1; i++) {

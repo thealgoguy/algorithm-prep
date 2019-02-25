@@ -23,30 +23,23 @@ class Graph1 {
 		adj[b].add(a);
 	}
 	
-	/*public void BFSRecursive(int source, boolean visited []) {
-		if(visited[source]) return;
-		visited[source] = true;
-		System.out.print(source+" ");
-		Queue<Integer> q = new LinkedList<Integer>();
-		for(int i : adj[source]) {
-			if(!visited[i])
-		}
-	}*/
-	
 	public void BFSIterative(int source, boolean visited []) {
 		if(visited[source]) return;
-		//visited[source] = true;
 		Queue<Integer> q = new LinkedList<Integer>();
 		q.add(source);
 		while(!q.isEmpty()) {
 			int next = q.remove();
-			if(!visited[next]) {
+			    //visit current level
 				visited[next] = true;
 				System.out.print(next+" ");
+				//visit all nodes of the next level and put them in the queue
+				//those already marked visited are of the previous leves, so ignore them
 				for(int i : adj[next]) {
-					if(!visited[i]) q.add(i);
+					if(!visited[i]) {
+						visited[i] = true;
+						q.add(i);
+					}
 				}
-			}
 		}
 	}
 }

@@ -15,14 +15,13 @@ public class LargestSubarraySum {
 	  
 	  int dp [] = new int[n];
 	  for(int i=0; i<n; i++) dp[i] = a[i];   //initializing max sub sum ending at index i;
-	  
+	  int max = 1;
 	  for(int i=1; i<n ;i++) {
 		  //int curr_sum = dp[i] + dp[i-1]; //check if subarray ending at i can be extended
 		  dp[i] = Math.max(dp[i], dp[i] + dp[i-1]);
+		  max = Math.max(max, dp[i]);
 	  }
-	  //now find the global max by comparing the maxes of every indices
-	  int max = dp[0];
-	  for(int i=1; i<n; i++) if(max < dp[i]) max = dp[i];
 	  System.out.println(max);
+	  //can be done without extra linear space
    }
 }
