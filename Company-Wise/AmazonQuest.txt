@@ -1,0 +1,80 @@
+    --------AMAZON-------
+
+find max no of distinct nodes in a binary tree path-http://stackoverflow.com/questions/39940607/max-number-of-distinct-nodes-in-a-binary-tree-path
+N number of identical nodes are given. You need to calculate how many no of binary trees are possible
+find if given bt is mirrored,mirror a bt, find if a bt is foldable
+top view of bt in constant space
+
+Given a very large binary number which can't be stored in a variable, determine the remainder of the decimal equiv of the binary number when divided by 3. Genralise the soln for divided by k. revise remainder theorem
+gcd/lcm of two num
+bit set approach/sorting approachfor finding 2 missing numbers
+find missing and repeating no - done
+Given a sorted array of n distinct integers where each integer is in the range from 0 to m-1 and m > n. Find the smallest number that is missing from the array logn - mlogn, logn if no duplicates
+Get a number, find next greater element with same digits
+convert Integer to Roman while handling all the corner cases
+http://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/
+maximum triangle path sum in a pyramid/triangle-http://stackoverflow.com/questions/8002252/euler-project-18-approach
+implementation - http://www.programcreek.com/2013/01/leetcode-triangle-java/
+max sum path across two arrays( very interesting uses idea of merge sort- http://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/)
+max no that can be obtained using swap operations in  an array
+http://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
+add two integers without any arithmetic operator
+search an int form 4 billion ints
+tower of hanoi
+Given a stream of integers, at any point of time, fetch the count of integers which are smaller than a given number.
+
+Given a string and integer k, in-place rearrange the string such that last n-k characters comes before the first k characters
+Find smallest substring which contains all characters from a given string
+count palindromic substrings/subsequences in a string.
+http://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/
+Find all anagrams of a string in a file of 1 TB
+given 2 strings, print all permutss such that order of chars is maintained
+Given a large file having strings(for understanding, given an array of strings). Find the string which repeats the most
+rearrange chars in a string so that no two adjacent chars are same. PQ max heap applic(http://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/)
+ http://www.geeksforgeeks.org/count-strings-can-formed-using-b-c-given-constraints/
+
+Given a LL, delete all nodes that sum to zero and return the remaining list
+Find the longest palindromic substring from the given string(non-DP)
+sum of two LL
+add 1 to the integer represented by LL with O(n) time, O(1) space, no recursing and without reversing
+clone a LL with random pointer(deep copy of LL)
+
+DP - optimal game planning , text justification, boolean parenthesization
+Find the closest k number of points from the origin. 
+
+balanced parenthesis in an expression
+https://www.careercup.com/question?id=6258049825112064
+https://www.careercup.com/question?id=5636069841174528
+
+Given a pattern containing only Is and Ds. I for increasing and D for decreasing. Devise an algorithm to print the MINIMUM number following that pattern. Digits from 1-9 and digits can’t repeat. 
+Example: 
+1. Input: D Output: 21 
+2. Input: I Output: 12 
+3. Input: DD Output: 321 
+4. Input: II Output: 123 
+5. Input: DIDI Output: 21435 
+6. Input: IIDDD Output: 126543 
+7. Input: DDIDDIID Output: 321654798
+
+Maximize XOR of 2 numbers….(best solution is using trie)
+
+Given k,n,m. where k is no. of coconuts you initially have. n is some no. such that if you have >=n coconuts, you become stressed otherwise you are normal. m is the no. of shops.You go from 1st shop to m-th shop without skipping any shop. At i-th shop, either you buy Si coconuts or sell Si coconuts. If you are stressed then you must become normal at next shop. If you have less than Si coconuts and you want to sell then you must sell all the coconuts you have. The task is to calculate maximum possible changes of your mood from stressed to normal or vice-versa Recursion with memoization.
+
+Given a string reverse the sequence of vowels in each word of string
+
+Given co-ordinates of flipkart fulfillment center and n sellers find the nearest k sellers. Use min-heap of size k.
+
+complexity of building a heap is n...dosn't it seem nlogn..how ?
+sliding-window-maximum-maximum-of-all-subarrays-of-size-k. http://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+http://www.geeksforgeeks.org/sum-minimum-maximum-elements-subarrays-size-k/
+https://www.careercup.com/question?id=5612093642375168
+
+------------Design Questions ----------------------
+explain internals of hashmap put and write code for it
+implement concurrentHashMap/LinkedHashMap in Java
+Design garbage collector in Java
+design an online shipment tracking system
+design a system to upload and tag an image.
+implement LRU cache with ttl at each block
+Design a dashboard system(both hld and lld)
+

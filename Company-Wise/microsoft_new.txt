@@ -1,0 +1,34 @@
+There is a graph where each node represents a city and it contains specific no. of people. A tournament is going on and each match is playing in one city. All city’s people gather to watch match. Traffic department wants to manage how many people travel through city x if match is playing in city y for each x. City x and y can be any city.
+Code & edge case
+Soln :- DFS with optimization O(n)
+
+Torch problem : There is a bridge and N no. people takes (a1,a2,—an) time to cross it and there are K torch and at any time x no of people can pass the bridge and it takes maximum of x people to cross it. Minimum time required to cross it.
+Devise algo and write down code
+Solution :- Sort array take x min pass it from one end to another. Bring min among them to one side send x maximum to other side and again bring 2nd min from other side again send x max follow it in cyclic way If all x min reached to one end again send x min to another side. DS used Dequeue
+
+
+Design a crawler to fetch code from n system and merge it .
+hit counter(no of hits in last 1 minute)
+spell check system
+----------------------------------------------
+reverse a DLL.
+Quick sort on linked list
+Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -
+find square root without using inuilt method,  given 2 arrays find (A-B) U (B-A),
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+Given a directed graph. Construct another graph from given graph such that if path exists from vertices A to vertices B and from B to C, then path from A to C and from C to A also should exists.
+Write function which takes array of elements A and array of elements B and outputs (A-B)U(B-A).
+Implement custom hashmap....write good hashing function for string. Implement concurrent hashmap. linkedhashmap.
+***Petrol Pump Problem : There are n petrol bunks located in a circle. We have a car with mileage 1kmpl. The distances between petrol bunks and no of litres petrol available at each petrol bunk is given. Need to find the starting point such that car can visit entire circle.
+*** celebrity problem : http://www.geeksforgeeks.org/the-celebrity-problem/ . Also do the exercises in this problem.
+BST Tree Inorder is given need to print all possible BST trees from the above tree which have same elements.
+In a BST, two nodes are swapped. Find them and swap back.
+largest non-palindromic substring
+suggest k nearest uber vehicles/restaurants to your location
+image compression algos
+single producer multiple consumer design pattern
+Design & Implement LRU cache with all cases.
+Design a system which helps to calculate average Skype call duration per day. In which events are tracked from mobile app. Need to take care of all edge cases like events can be logged to server in any sequence & there can be some events missing on server side also
+----Linked lists-----
+Sum of two LL representing floating point nums : 123.45 + 12.1235
+Double linked list swap pair wise links
