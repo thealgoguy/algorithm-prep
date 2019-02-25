@@ -16,6 +16,7 @@ public class LongestIncreasingSubsequence {
 					dp[i] = Math.max(dp[i], dp[j]+1);
 				}
 			}
+			//update global max
 			if(max < dp[i]) {
 				max = dp[i];
 				index = i;

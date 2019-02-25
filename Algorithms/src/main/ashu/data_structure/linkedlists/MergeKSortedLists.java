@@ -28,6 +28,7 @@ public class MergeKSortedLists {
         Node dummy = new Node(0);
         Node tail=dummy;
         
+        //add head of all the LLS in priority queue(min-heap)
         for (Node node:lists)
             if (node!=null) queue.add(node);
             

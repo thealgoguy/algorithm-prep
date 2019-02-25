@@ -41,6 +41,7 @@ class Maze {
 			}
 			visited[current.x][current.y] = true;
 			//discovering neighbors in the order right,left,down,up
+			//mark visited while offer and poll both
 			if(isSafe(current.x,current.y+1)) {
 				if(!visited[current.x][current.y+1]) {
 					Cell neighb = new Cell(current.x,current.y+1);

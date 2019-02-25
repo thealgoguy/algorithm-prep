@@ -55,7 +55,7 @@ public class LongestPalSubstring {
 	
 	public static void main(String args []) {
 		LongestPalSubstring lp = new LongestPalSubstring();
-		String s = "babaddtattarrattatddetartrateedredividerb";
+		String s = "babbaaacabcacaaacbcbccaacacababacaccbcbcabcbbabbaabcabcbbb";
 		String p = lp.longestPalindromeDP(s);
 		System.out.println(p);
 		p = lp.longestPalindromeUsingCenter(s);

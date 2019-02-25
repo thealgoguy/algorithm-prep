@@ -21,7 +21,7 @@ public class LargestRectAreaHistogram {
         int max = Integer.MIN_VALUE;
         int i = 0;
         for(i=0; i<n; i++) {
-        	//put greater elements on stack since we are look for smaller elements
+        	//put index of greater elements on stack since we are look for smaller elements
             if(s.isEmpty() || a[s.peek()]  <= a[i]) s.push(i);
             else {
                     //if smaller element is encountered, then find the area with current top as height, 

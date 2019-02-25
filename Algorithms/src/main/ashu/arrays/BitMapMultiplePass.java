@@ -13,7 +13,7 @@ public class BitMapMultiplePass {
 		System.out.print("Input array  : ");
 		for(int i=0; i<a.length; i++) System.out.print(a[i]+" ");
 		byte [] bitmap = new byte[numBytes]; 
-		int size = numBytes * 8;
+		int size = numBytes * 8; //count of numbers we can store in bits = total bits available
 		int low = 0, high = numBytes*8-1;
 		System.out.println("\nMissing numbers in various passes are : ");
 		int max = 100;

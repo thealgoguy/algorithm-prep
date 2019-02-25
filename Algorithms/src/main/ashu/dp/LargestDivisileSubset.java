@@ -5,6 +5,7 @@ import java.util.Arrays;
 //http://www.geeksforgeeks.org/largest-divisible-subset-array/
 //Given an array the task is to find largest divisible subset in array. 
 //A subset is called divisible if for every pair (x, y) in subset, either x divides y or y divides x.
+//After sorting the array, it reduces to finding Longest Dividing Subsequence, LDS(a variation of LIS)
 
 public class LargestDivisileSubset {
 	static String subset = "";
@@ -24,6 +25,7 @@ public class LargestDivisileSubset {
 	 //  prev[0] = -1;
 	   for(int i=1; i<dp.length; i++) {
 		   int max = Integer.MIN_VALUE;
+		   //find optimal smaller subset for the set ending at index i
 		   for(int j=i-1; j>=0; j--) {
 			   if(arr[i] % arr[j] ==0) {
 				   //max = Math.max(max, dp[j]);
