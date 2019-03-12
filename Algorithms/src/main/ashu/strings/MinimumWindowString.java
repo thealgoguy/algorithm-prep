@@ -1,50 +1,64 @@
 package main.ashu.strings;
 
+import java.util.HashMap;
+import java.util.Map;
+
 //Given S string S and S string T, find the minimum window in S which will contain all the characters in T in linear time complexity.
 //Note that when the count of S character C in T is N, then the count of C in minimum window in S should be at least N.
 //https://www.interviewbit.com/problems/window-string/
+//http://buttercola.blogspot.com/2014/09/leetcode-minimum-window-substring.html
 public class MinimumWindowString {
 	public static void main(String args []) {
 		String S = "ADOBECODEBANC";
 		String T = "ABC";
-
-		int m = S.length();
-		int n = T.length();
+        String str = minWindow(S, T);
+        System.out.println("Minimum wondow substring = "+str);
 		
-		int sh [] = new int[256];
-		int th [] = new int[256];
-		
-		boolean found = false;
-		int ms = 0, me = 0;  //for recording optimal window
-		 int count=0;  
-		int min = Integer.MAX_VALUE;
-		for(int i=0; i<n; i++) {
-			th[T.charAt(i)]++;
-		}
-		int start=0, end=0;  //for recording the current window
-		//Now grow current window to the right, shrink if its a candidate window
-		//candidate window is one which could become an optimal window
-		for(end=0;end<m; end++) {            
-			//increment count iff the current window needs this character
-			if(sh[S.charAt(end)] < th[S.charAt(end)]) count++;
-			sh[S.charAt(end)]++;  //taking the character in the current window
-			if(count == n) found = true; //current window is a possible candidate
-
-			// if its a candidate window then try to shrink it form left, without violating the condition
-			//sh[S.charAt(start)] > th[S.charAt(start)] for removing excess characters
-			while(count == n && sh[S.charAt(start)] > th[S.charAt(start)]) {
-				sh[S.charAt(start)]--; start++;
-				if(min > end-start+1) {
-					min = end-start+1;
-					ms=start; me=end;
-				}
-			}
-		}
-		if(found) {
-			System.out.println("Minimum window substring is : "+S.substring(ms, me+1));
-		}
-		else {
-			System.out.println("Minimum window substring doesn't exist");
-		}
 	}
+	
+	public static String minWindow(String S, String T) {
+	      if (S == null || S.length() == 0 || T == null || T.length() == 0) {
+	            return "";
+	        }        
+	        Map<Character, Integer> map = new HashMap<Character, Integer>();
+	        Map<Character, Integer> dict = new HashMap<Character, Integer>(); 
+	        for (int i = 0; i < T.length(); i++) {
+	            map.put(T.charAt(i), 0);             
+	            if (dict.containsKey(T.charAt(i))) {
+	                dict.put(T.charAt(i), dict.get(T.charAt(i)) + 1);
+	            } else {
+	                dict.put(T.charAt(i), 1);
+	            }
+	        }	         
+	        int start = 0;
+	        int count = 0;
+	        int minLen = S.length() + 1;
+	        String result = "";         
+	        for (int end = 0; end < S.length(); end++) {
+	        	//if valid char, include and increment count if needed
+	            if (map.containsKey(S.charAt(end))) {
+	                map.put(S.charAt(end), map.get(S.charAt(end)) + 1);	                 
+	                if (map.get(S.charAt(end)) <= dict.get(S.charAt(end))) {
+	                    count++;
+	                }
+	            }
+	            //shrink form left by removing invalid chars
+	            //chars not present in dict or having higher frequency than in dict
+	            while (start <= end && (!dict.containsKey(S.charAt(start)) || 
+	                    map.get(S.charAt(start)) > dict.get(S.charAt(start)))) {
+	                      if (map.containsKey(S.charAt(start))) {
+	                          map.put(S.charAt(start), map.get(S.charAt(start)) -1);
+	                      }
+	                      start++;
+	                } 
+	               //update answer
+	              if (count == T.length()) {
+	                  if (end - start + 1 < minLen) {
+	                      minLen = end - start + 1;
+	                      result = S.substring(start, end + 1);
+	                  }
+	              }
+	        }        
+	        return result;
+	    }
 }

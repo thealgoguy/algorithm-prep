@@ -21,6 +21,7 @@ public class StringInterleavingProblem {
     	boolean dp [][] = new boolean[m+1][n+1];
     	for(int i=0; i<=m; i++) {
     		for(int j=0; j<=n; j++) {
+    			//check for interleaving for length i+j
     			if(i==0 || j==0) dp[i][j] = true;  //empty strings are considered interleaved
     			else {
     				if(a.charAt(i-1)==c.charAt(i+j-1)) dp[i][j] = dp[i-1][j];

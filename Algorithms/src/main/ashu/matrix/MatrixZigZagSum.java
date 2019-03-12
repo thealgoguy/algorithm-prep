@@ -1,5 +1,7 @@
 package main.ashu.matrix;
 
+//A zigzag sequence starts from the top and ends at the bottom. 
+//Two consecutive elements of sequence cannot belong to same column.
 /*Maximum Zigzag sum starting from arr[i][j] to a 
 bottom cell can be written as :
 zzs(i, j) = arr[i][j] + max(zzs(i+1, k)), 
@@ -23,13 +25,14 @@ public class MatrixZigZagSum {
 		    for(int i=1; i<n; i++) {
 		        for(int j=0; j<n; j++){
 		        	dp[i][j] = Integer.MIN_VALUE;
+		        	//take max of previous zig-zags of different columns
 		            for(int k=0; k<n; k++){
 		            	if(k !=j) {
 		            		dp[i][j] = Math.max(dp[i][j], dp[i-1][k]);
 		            	}
 		            }
 		            dp[i][j] += a[i][j];
-		            max = Math.max(dp[i][j], max);
+		            max = Math.max(dp[i][j], max);//need to update for last row only(i=n-1)
 		        }
 		    }
 		    System.out.println(max);

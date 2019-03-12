@@ -1,7 +1,5 @@
 package main.ashu.data_structure.binarytreesandbst.binarytrees;
 
-import java.awt.SecondaryLoop;
-
 //https://www.programcreek.com/2014/05/leetcode-recover-binary-search-tree-java/
 //Two elements of a binary search tree (BST) are swapped by mistake. 
 //Recover the tree without changing its structure.

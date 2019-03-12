@@ -62,7 +62,7 @@ public class MedianSortedArraysGeneric {
     //here k is 1-based so kth element be at k-1 th index
     public static double kthSmallestLengthBased(int k, int a[], int b[], int s1, int s2) {
     	if(s1 >= a.length) return b[s2+k-1];
-    	if(s2>= b.length) return b[s1+k-1];
+    	if(s2>= b.length) return a[s1+k-1];
     	if(k==1) return Math.min(a[s1], b[s2]);
     	//if any of the array has less than k/2 elements, set the mid to MAX so that it will always move to the other array due to base check.
     	int m1 = (s1+k/2-1 < a.length) ? a[s1+k/2-1] : Integer.MAX_VALUE;

@@ -36,10 +36,8 @@ public class StockProfitMaximization {
 		long minprice = Integer.MAX_VALUE;
 		long maxprofit = 0;
 		for (int i = 0; i < prices.length; i++) {
-			if (prices[i] < minprice)
-				minprice = prices[i];
-			else if (prices[i] - minprice > maxprofit)
-				maxprofit = prices[i] - minprice;
+				minprice = Math.max(minprice, prices[i]);
+				maxprofit = Math.max(maxprofit, prices[i] - minprice);
 		}
 		return maxprofit;
 	}

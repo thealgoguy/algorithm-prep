@@ -27,7 +27,7 @@ public class LongestSubstringWithKUniqueCharacters {
 				if (set.size() < k) { // can adjust next char in set ?
 					set.add(next);
 				} else {
-					// make room in set by removing chars form left
+					// make room in set by removing chars from left
 					while (set.size() == k && start < end) {
 						set.remove(str.charAt(start));
 						start++;

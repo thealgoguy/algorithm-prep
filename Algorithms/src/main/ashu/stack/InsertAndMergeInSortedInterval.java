@@ -6,6 +6,7 @@ import java.util.List;
 //https://www.geeksforgeeks.org/insert-in-sorted-and-non-overlapping-interval-array/
 //Given a set of non-overlapping & sorted intervals, insert a new interval into the intervals (merge if necessary)
 //https://www.programcreek.com/2012/12/leetcode-insert-interval/
+//accepted - https://leetcode.com/problems/insert-interval/submissions/
 public class InsertAndMergeInSortedInterval {
 	static class Interval {
 		int start, end;
@@ -28,11 +29,16 @@ public class InsertAndMergeInSortedInterval {
                 result.add(interval);
             }else if(interval.start > newInterval.end){ //new interval smaller than current interval
                 result.add(newInterval);
+                //the current interval will come later in the sorted list
                 newInterval = interval;        
-            }else if(interval.end >= newInterval.start || interval.start <= newInterval.end){ //new and current intervals overlap, merge case
-                newInterval = new Interval(Math.min(interval.start, newInterval.start), Math.max(newInterval.end, interval.end));
+            }else if(interval.end >= newInterval.start || interval.start <= newInterval.end){ 
+            	//new and current intervals overlap, update the boundaries of the neeInterval
+                newInterval.start = Math.min(interval.start, newInterval.start);
+                newInterval.end = Math.max(newInterval.end, interval.end);
             }
         }
+		//the value in the newInterval holds the greatest interval in the sorted order, 
+		//add the same to the result list
         result.add(newInterval); 
 		return result;
 	}

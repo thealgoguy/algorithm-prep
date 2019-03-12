@@ -31,6 +31,7 @@ public class LargestRectAreaHistogram {
                         int width = (s.isEmpty()) ? i : (i - (s.peek()) - 1);
                         int area = width * a[top];
                         max = Math.max(area, max);
+                        //check if we can now push the current element
                         if(s.isEmpty() || a[s.peek()] <=a[i]) {
                             s.push(i); break;
                         }

@@ -12,7 +12,7 @@ class Node {
 		left = right = null;
 	}
 }
-
+//recursive
 public class CheckMirrorIterative {
 	
 	public static boolean isMirrorV1(Node root1, Node root2) {

@@ -10,12 +10,14 @@ import java.util.List;
 //how to merge k sorted intervals ? heap approach
 //how to check if two intervals overlap - min of end-points >= max of star-points
 //(min(a.end, b.end) >= max(a.start, b.start)
+//accepted - https://leetcode.com/problems/merge-intervals/submissions/
 public class MergeOvelappingIntervals {
 
 	private class Interval {
 		int start, end;
-		public Interval(int start2, int max) {
-			// TODO Auto-generated constructor stub
+		public Interval(int start, int end) {
+			this.start = start;
+			this.end = end;
 		}
 	}
 
@@ -35,18 +37,18 @@ public class MergeOvelappingIntervals {
 		});
 
 		Interval pre = intervals.get(0);
-		for (int i = 1; i < intervals.size(); i++) {
-			Interval curr = intervals.get(i);
-			if (pre.end < curr.start) {
-				result.add(pre);
-				pre = curr;
-			} else if(pre.end < curr.end){
-				pre.end = curr.end;
-				/*Interval merged = new Interval(pre.start, Math.max(pre.end,
-						curr.end));
-				pre = merged;*/
-			}
-		}
+		result.add(intervals.get(0));
+		//keep including the non-overlapping ones in the answer set
+		//in case of overlap, update the end point of the last interval
+        for(int i=1; i<intervals.size(); i++) {
+            Interval current = intervals.get(i);
+            Interval prev = result.get(result.size()-1);
+            if(prev.end >= current.start) {
+                prev.end = Math.max(prev.end, current.end);
+            }else {
+            	result.add(current);
+            }
+        }
 		result.add(pre);
 
 		return result;

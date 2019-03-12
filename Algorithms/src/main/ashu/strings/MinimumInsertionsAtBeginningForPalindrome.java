@@ -1,8 +1,5 @@
 package main.ashu.strings;
 
-import java.util.Collections;
-
-import com.sun.xml.internal.ws.util.StringUtils;
 
 public class MinimumInsertionsAtBeginningForPalindrome {
     public static void main(String args []) {

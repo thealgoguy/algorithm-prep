@@ -1,4 +1,4 @@
-package main.ashu.strings;
+package main.ashu.stack;
 
 import java.util.Stack;
 
@@ -27,8 +27,7 @@ public class LongestValidParenthesis {
 				   stack.push(i);
 			   }
 		   }
-	   }
-	   
+	   }	   
 	   System.out.println("Max length valid parenthesis = "+max);
    }
 }

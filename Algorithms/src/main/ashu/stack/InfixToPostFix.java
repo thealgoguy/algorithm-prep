@@ -1,12 +1,12 @@
 package main.ashu.stack;
 
 import java.util.Stack;
-
+//https://www.geeksforgeeks.org/convert-infix-prefix-notation/
 public class InfixToPostFix {
 	public static String infixToPostfix(String exp) {
 		// initializing empty String for result
 		String result = new String("");
-		Stack<Character> stack = new Stack<Character>();
+		Stack<Character> stack = new Stack<Character>(); //operator sack
 
 		for (int i = 0; i < exp.length(); ++i) {
 			char c = exp.charAt(i);

@@ -34,6 +34,7 @@ public class EvaluateInfixExpression {
 			} else {
 				//solve for binary operator....
 				//keep evaluating while top of operator stack has higher precedence than current token
+				//stack evaluate pehle
 				while (!operator.isEmpty()
 						&& hasHigherPrecedence(operator.peek(), tokens[i])) {
 					operand.push(operate(operand.pop(), operand.pop(),
